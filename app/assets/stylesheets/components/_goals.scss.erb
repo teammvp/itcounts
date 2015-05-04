@@ -1,0 +1,79 @@
+
+//goals styling
+.goals {
+  h1{
+    margin: 0;
+  }
+  p {
+    color: $white;
+    margin: 0 0 $normal-pad 0 ;
+  }
+}
+
+// goal_complete_button
+.rnd-btn {
+  width: 200px;
+  height: 200px;
+  background:
+    url(<%= asset_path 'inner-circle.png' %>) no-repeat center,
+    url(<%= asset_path 'quarter-circle.svg' %>) no-repeat top left,
+    linear-gradient(rgba($white, 0.5),rgba($white, 0.5)),
+    url(<%= asset_path 'half-circle.svg' %>) no-repeat top left;
+  background-size: 75%, 50%, 100%, 50%;
+  border-radius: 125px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.category-logo {
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+.done{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 80%;
+  opacity: .8;
+}
+
+.goal-stats {
+  div{
+    display:inline-block;
+    text-align: center;
+    &:not(:last-child) span{
+      font-size: 2.0em;
+    }
+    color: $white;
+  }
+  h1 {
+    font-size: 0.7em;
+  }
+  p{
+    display:block;
+    width:100%;
+    display: table;
+    background: rgba($white, .3);
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin: 7px;
+
+  }
+  span {
+    display: table-cell;
+    font-size: 1.5em;
+    font-style: normal;
+    vertical-align: middle;
+  }
+  em{
+    font-size: 0.5em;
+    display:block;
+    line-height:0.5em;
+  }
+
+}

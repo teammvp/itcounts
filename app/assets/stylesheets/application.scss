@@ -1,0 +1,14 @@
+// importing foundation grid
+@import 'foundation/components/grid';
+
+
+//@import "foundation_and_overrides";
+
+// importing compass
+@import "compass";
+
+// importing custom setups
+@import 'components/variables';
+@import 'components/general';
+@import 'components/goals';
+
