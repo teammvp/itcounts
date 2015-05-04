@@ -43,6 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'pry-rails', :group => :development
+
 gem 'sprockets', '< 2.13'
 gem 'foundation-rails'
 gem "compass-rails", github: "Compass/compass-rails", branch: "master"
