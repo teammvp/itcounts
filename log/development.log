@@ -1,0 +1,560 @@
+
+
+Started GET "/" for ::1 at 2015-05-04 17:53:50 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/jeffwolff/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffwolff/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffwolff/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.5ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.7ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (68.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDurationColumnToGoals (20150504075221)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.1ms)[0m  [1mALTER TABLE "goals" ADD "duration" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504075221"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'facts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'goals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-05-04 17:55:04 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+WARNING: Paremeter $from-context must resolve to a value in pixel units.
+         on line 43 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 2 of /Users/jeffwolff/project_itcounts/itcounts/app/assets/stylesheets/application.css.scss
+
+
+WARNING: Parameter $to-context must resolve to a value in pixel units.
+         on line 44 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 2 of /Users/jeffwolff/project_itcounts/itcounts/app/assets/stylesheets/application.css.scss
+
+
+WARNING: $base-font-size must resolve to a pixel unit.
+         on line 46 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 2 of /Users/jeffwolff/project_itcounts/itcounts/app/assets/stylesheets/application.css.scss
+
+
+WARNING: $base-line-height must resolve to a pixel unit.
+         on line 47 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jeffwolff/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 2 of /Users/jeffwolff/project_itcounts/itcounts/app/assets/stylesheets/application.css.scss
+
+
+Completed 200 OK in 4683ms (Views: 4677.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0746f2560429ebc0c0910d54bb63c675.css?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 17:55:09 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "water"], ["created_at", "2015-05-04 08:29:44.056503"], ["updated_at", "2015-05-04 08:29:44.056503"]]
+  [1m[35m (65.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "water saving description"], ["created_at", "2015-05-04 08:29:44.130053"], ["updated_at", "2015-05-04 08:29:44.130053"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["duration", "1"], ["created_at", "2015-05-04 08:29:44.132332"], ["updated_at", "2015-05-04 08:29:44.132332"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["title", "carbon"], ["created_at", "2015-05-04 08:29:44.134543"], ["updated_at", "2015-05-04 08:29:44.134543"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "carbon saving description"], ["created_at", "2015-05-04 08:29:44.136063"], ["updated_at", "2015-05-04 08:29:44.136063"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["duration", "60"], ["created_at", "2015-05-04 08:29:44.137863"], ["updated_at", "2015-05-04 08:29:44.137863"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "power"], ["created_at", "2015-05-04 08:29:44.139309"], ["updated_at", "2015-05-04 08:29:44.139309"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "power saving description"], ["created_at", "2015-05-04 08:29:44.140990"], ["updated_at", "2015-05-04 08:29:44.140990"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["duration", "20"], ["created_at", "2015-05-04 08:29:44.142415"], ["updated_at", "2015-05-04 08:29:44.142415"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["title", "recycle"], ["created_at", "2015-05-04 08:29:44.143810"], ["updated_at", "2015-05-04 08:29:44.143810"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "recycling saving description"], ["created_at", "2015-05-04 08:29:44.145456"], ["updated_at", "2015-05-04 08:29:44.145456"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["duration", "2"], ["created_at", "2015-05-04 08:29:44.146931"], ["updated_at", "2015-05-04 08:29:44.146931"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "water"], ["created_at", "2015-05-04 08:30:25.052885"], ["updated_at", "2015-05-04 08:30:25.052885"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "water saving description"], ["created_at", "2015-05-04 08:30:25.057942"], ["updated_at", "2015-05-04 08:30:25.057942"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["duration", "1"], ["created_at", "2015-05-04 08:30:25.061130"], ["updated_at", "2015-05-04 08:30:25.061130"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["title", "carbon"], ["created_at", "2015-05-04 08:30:25.062897"], ["updated_at", "2015-05-04 08:30:25.062897"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "carbon saving description"], ["created_at", "2015-05-04 08:30:25.064517"], ["updated_at", "2015-05-04 08:30:25.064517"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["duration", "60"], ["created_at", "2015-05-04 08:30:25.066383"], ["updated_at", "2015-05-04 08:30:25.066383"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "power"], ["created_at", "2015-05-04 08:30:25.067883"], ["updated_at", "2015-05-04 08:30:25.067883"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "power saving description"], ["created_at", "2015-05-04 08:30:25.069724"], ["updated_at", "2015-05-04 08:30:25.069724"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["duration", "20"], ["created_at", "2015-05-04 08:30:25.071255"], ["updated_at", "2015-05-04 08:30:25.071255"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["title", "recycle"], ["created_at", "2015-05-04 08:30:25.073004"], ["updated_at", "2015-05-04 08:30:25.073004"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "goals" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "recycling saving description"], ["created_at", "2015-05-04 08:30:25.074387"], ["updated_at", "2015-05-04 08:30:25.074387"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("duration", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["duration", "2"], ["created_at", "2015-05-04 08:30:25.075890"], ["updated_at", "2015-05-04 08:30:25.075890"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "water"], ["created_at", "2015-05-04 08:30:25.082526"], ["updated_at", "2015-05-04 08:30:25.082526"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "water saving description"], ["created_at", "2015-05-04 08:30:25.085955"], ["updated_at", "2015-05-04 08:30:25.085955"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "carbon"], ["created_at", "2015-05-04 08:30:25.087379"], ["updated_at", "2015-05-04 08:30:25.087379"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "carbon saving description"], ["created_at", "2015-05-04 08:30:25.088815"], ["updated_at", "2015-05-04 08:30:25.088815"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "power"], ["created_at", "2015-05-04 08:30:25.090110"], ["updated_at", "2015-05-04 08:30:25.090110"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "power saving description"], ["created_at", "2015-05-04 08:30:25.091523"], ["updated_at", "2015-05-04 08:30:25.091523"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "recycle"], ["created_at", "2015-05-04 08:30:25.092729"], ["updated_at", "2015-05-04 08:30:25.092729"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["description", "recycling saving description"], ["created_at", "2015-05-04 08:30:25.094176"], ["updated_at", "2015-05-04 08:30:25.094176"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "facts" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "1000 litres saved"], ["created_at", "2015-05-04 08:30:25.101733"], ["updated_at", "2015-05-04 08:30:25.101733"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "facts" ("category_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["category_id", 0], ["created_at", "2015-05-04 08:30:25.104821"], ["updated_at", "2015-05-04 08:30:25.104821"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "facts" ("icon", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["icon", ""], ["created_at", "2015-05-04 08:30:25.106177"], ["updated_at", "2015-05-04 08:30:25.106177"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "facts" ("background_image", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["background_image", ""], ["created_at", "2015-05-04 08:30:25.107371"], ["updated_at", "2015-05-04 08:30:25.107371"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "facts" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "100 tonnes of CO2 saved"], ["created_at", "2015-05-04 08:30:25.108658"], ["updated_at", "2015-05-04 08:30:25.108658"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "facts" ("category_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["category_id", 0], ["created_at", "2015-05-04 08:30:25.109963"], ["updated_at", "2015-05-04 08:30:25.109963"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "facts" ("icon", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["icon", ""], ["created_at", "2015-05-04 08:30:25.111308"], ["updated_at", "2015-05-04 08:30:25.111308"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "facts" ("background_image", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["background_image", ""], ["created_at", "2015-05-04 08:30:25.112409"], ["updated_at", "2015-05-04 08:30:25.112409"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "facts" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "1200kw reduction in consumption per day"], ["created_at", "2015-05-04 08:30:25.113757"], ["updated_at", "2015-05-04 08:30:25.113757"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "facts" ("category_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["category_id", 0], ["created_at", "2015-05-04 08:30:25.115075"], ["updated_at", "2015-05-04 08:30:25.115075"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "facts" ("icon", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["icon", ""], ["created_at", "2015-05-04 08:30:25.125831"], ["updated_at", "2015-05-04 08:30:25.125831"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "facts" ("background_image", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["background_image", ""], ["created_at", "2015-05-04 08:30:25.127111"], ["updated_at", "2015-05-04 08:30:25.127111"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "facts" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "recycling savings of 1 tonne"], ["created_at", "2015-05-04 08:30:25.128344"], ["updated_at", "2015-05-04 08:30:25.128344"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "facts" ("category_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["category_id", 0], ["created_at", "2015-05-04 08:30:25.129559"], ["updated_at", "2015-05-04 08:30:25.129559"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "facts" ("icon", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["icon", ""], ["created_at", "2015-05-04 08:30:25.130761"], ["updated_at", "2015-05-04 08:30:25.130761"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "facts" ("background_image", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["background_image", ""], ["created_at", "2015-05-04 08:30:25.131963"], ["updated_at", "2015-05-04 08:30:25.131963"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "JCLee"], ["created_at", "2015-05-04 08:30:25.137180"], ["updated_at", "2015-05-04 08:30:25.137180"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("token", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["token", ""], ["created_at", "2015-05-04 08:30:25.140361"], ["updated_at", "2015-05-04 08:30:25.140361"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "us@us.com"], ["created_at", "2015-05-04 08:30:25.141762"], ["updated_at", "2015-05-04 08:30:25.141762"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["username", "JWolff"], ["created_at", "2015-05-04 08:30:25.143068"], ["updated_at", "2015-05-04 08:30:25.143068"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("token", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["token", ""], ["created_at", "2015-05-04 08:30:25.144272"], ["updated_at", "2015-05-04 08:30:25.144272"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["email", "some@some.com"], ["created_at", "2015-05-04 08:30:25.145699"], ["updated_at", "2015-05-04 08:30:25.145699"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "LShillabeer"], ["created_at", "2015-05-04 08:30:25.146903"], ["updated_at", "2015-05-04 08:30:25.146903"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("token", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["token", ""], ["created_at", "2015-05-04 08:30:25.148239"], ["updated_at", "2015-05-04 08:30:25.148239"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "who@who.com"], ["created_at", "2015-05-04 08:30:25.149486"], ["updated_at", "2015-05-04 08:30:25.149486"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["username", "AllOfUs"], ["created_at", "2015-05-04 08:30:25.150666"], ["updated_at", "2015-05-04 08:30:25.150666"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("token", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["token", ""], ["created_at", "2015-05-04 08:30:25.151835"], ["updated_at", "2015-05-04 08:30:25.151835"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["email", "where@where.com"], ["created_at", "2015-05-04 08:30:25.152943"], ["updated_at", "2015-05-04 08:30:25.152943"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mGoal Load (0.5ms)[0m  [1mSELECT "goals".* FROM "goals"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+PG::UndefinedTable: ERROR:  relation "goals" does not exist
+LINE 5:                WHERE a.attrelid = '"goals"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"goals"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+PG::UndefinedTable: ERROR:  relation "goals" does not exist
+LINE 5:                WHERE a.attrelid = '"goals"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"goals"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGoals (20150504071045)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "goals" ("id" serial primary key, "title" character varying, "description" character varying, "catagory_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504071045"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCategories (20150504071219)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "categories" ("id" serial primary key, "title" character varying, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504071219"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFacts (20150504071359)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "facts" ("id" serial primary key, "description" character varying, "category_id" integer, "icon" character varying, "background_image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504071359"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150504071450)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "token" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504071450"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddDurationColumnToGoals (20150504075221)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "goals" ADD "duration" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504075221"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'categories'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'facts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'goals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "goals" ("title", "description", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "water"], ["description", "water saving description"], ["duration", "1"], ["created_at", "2015-05-04 08:39:41.010230"], ["updated_at", "2015-05-04 08:39:41.010230"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "goals" ("title", "description", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "carbon"], ["description", "carbon saving description"], ["duration", "60"], ["created_at", "2015-05-04 08:39:41.015599"], ["updated_at", "2015-05-04 08:39:41.015599"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "goals" ("title", "description", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "power"], ["description", "power saving description"], ["duration", "20"], ["created_at", "2015-05-04 08:39:41.018003"], ["updated_at", "2015-05-04 08:39:41.018003"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "goals" ("title", "description", "duration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "recycle"], ["description", "recycling saving description"], ["duration", "2"], ["created_at", "2015-05-04 08:39:41.020022"], ["updated_at", "2015-05-04 08:39:41.020022"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "water"], ["description", "water saving description"], ["created_at", "2015-05-04 08:39:41.026969"], ["updated_at", "2015-05-04 08:39:41.026969"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "carbon"], ["description", "carbon saving description"], ["created_at", "2015-05-04 08:39:41.029050"], ["updated_at", "2015-05-04 08:39:41.029050"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "power"], ["description", "power saving description"], ["created_at", "2015-05-04 08:39:41.030832"], ["updated_at", "2015-05-04 08:39:41.030832"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "categories" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "recycle"], ["description", "recycling saving description"], ["created_at", "2015-05-04 08:39:41.032270"], ["updated_at", "2015-05-04 08:39:41.032270"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "facts" ("description", "category_id", "icon", "background_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "1000 litres saved"], ["category_id", 0], ["icon", ""], ["background_image", ""], ["created_at", "2015-05-04 08:39:41.040740"], ["updated_at", "2015-05-04 08:39:41.040740"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "facts" ("description", "category_id", "icon", "background_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["description", "100 tonnes of CO2 saved"], ["category_id", 0], ["icon", ""], ["background_image", ""], ["created_at", "2015-05-04 08:39:41.043719"], ["updated_at", "2015-05-04 08:39:41.043719"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "facts" ("description", "category_id", "icon", "background_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "1200kw reduction in consumption per day"], ["category_id", 0], ["icon", ""], ["background_image", ""], ["created_at", "2015-05-04 08:39:41.046598"], ["updated_at", "2015-05-04 08:39:41.046598"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "facts" ("description", "category_id", "icon", "background_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["description", "recycling savings of 1 tonne"], ["category_id", 0], ["icon", ""], ["background_image", ""], ["created_at", "2015-05-04 08:39:41.048597"], ["updated_at", "2015-05-04 08:39:41.048597"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "token", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "JCLee"], ["token", ""], ["email", "us@us.com"], ["created_at", "2015-05-04 08:39:41.055801"], ["updated_at", "2015-05-04 08:39:41.055801"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "token", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "JWolff"], ["token", ""], ["email", "some@some.com"], ["created_at", "2015-05-04 08:39:41.057676"], ["updated_at", "2015-05-04 08:39:41.057676"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "token", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LShillabeer"], ["token", ""], ["email", "who@who.com"], ["created_at", "2015-05-04 08:39:41.059067"], ["updated_at", "2015-05-04 08:39:41.059067"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "token", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "AllOfUs"], ["token", ""], ["email", "where@where.com"], ["created_at", "2015-05-04 08:39:41.060439"], ["updated_at", "2015-05-04 08:39:41.060439"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mGoal Load (0.6ms)[0m  [1mSELECT "goals".* FROM "goals"[0m
