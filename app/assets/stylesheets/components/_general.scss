@@ -1,0 +1,42 @@
+* {
+  font-family: $font-family;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+
+  @include box-shadow(rgba($black,.3) 2px 2px 10px);
+  z-index: 10;
+  h1{
+    text-indent: -9999px;
+    display:inline-block;
+  }
+  img{
+    padding: $small-pad 0 $normal-pad;
+  }
+}
+main {
+  @include background-image(linear-gradient($light-green, $turquoise));
+  min-height: 500px;
+  text-align: center;
+  padding-top: 20px;
+  color: $dark-gray;
+}
+
+footer {
+  height: 50px;
+  position:fixed;
+  bottom: 0;
+  background-color: $dark-gray;
+  color: $white;
+
+}
+
+/* general classes that will be shared in all pages */
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
