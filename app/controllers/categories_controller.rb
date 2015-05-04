@@ -1,12 +1,13 @@
 class CategoriesController < ApplicationController
 
   def index
-    # return 4 categories and associated data
+    # display all the current categories
+    @categories = Category.all()
   end
 
   def show
     # return all the goals associated with the category
+    @goals = Category.find_by(:title => params[:category]).goals
   end
-
 
 end
