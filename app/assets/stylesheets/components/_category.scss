@@ -1,0 +1,25 @@
+.cat-list li{
+  margin:0;
+}
+
+.cat-list {
+  .category {
+    width: 100%;
+    position:relative;
+    padding: 30px;
+    h1{
+      padding: $normal-pad 0;
+      font-size: 1em;
+    }
+    img{
+      height: 120px;
+    }
+  }
+
+  .odd {
+    @include background-image(linear-gradient($light-green, $turquoise));
+  }
+  .even {
+    @include background-image(linear-gradient( $turquoise, $light-green));
+  }
+}
