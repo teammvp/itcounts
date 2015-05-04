@@ -4814,3 +4814,1121 @@ Started GET "/assets/half-circle-c88582548fec23b500a5fa02c11f9ed8.svg" for ::1 a
 
 
 Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 20:49:20 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 21:01:41 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 293ms (Views: 284.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 21:01:41 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 21:01:41 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 21:01:41 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 21:01:41 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 21:01:41 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 21:01:42 +1000
+
+
+Started GET "/api/" for ::1 at 2015-05-04 21:01:48 +1000
+Processing by PagesController#api as HTML
+  Rendered pages/api.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 151ms (Views: 149.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 21:01:48 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 21:01:48 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 21:01:49 +1000
+
+
+Started GET "/about/" for ::1 at 2015-05-04 21:02:01 +1000
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 21:02:01 +1000
+
+
+Started GET "/rails/info/routes" for ::1 at 2015-05-04 21:02:07 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendered /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.7ms)
+  Rendered /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/railties-4.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-04 23:01:34 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 166ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:01:34 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:01:35 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 23:02:13 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 203ms (Views: 201.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:02:14 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 23:04:41 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+WARNING: Paremeter $from-context must resolve to a value in pixel units.
+         on line 43 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: Parameter $to-context must resolve to a value in pixel units.
+         on line 44 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-font-size must resolve to a pixel unit.
+         on line 46 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-line-height must resolve to a pixel unit.
+         on line 47 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+Completed 200 OK in 4064ms (Views: 4063.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/application-c22faeba519fa18fd31e39936b77c662.css?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:04:45 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 23:05:38 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+WARNING: Paremeter $from-context must resolve to a value in pixel units.
+         on line 43 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: Parameter $to-context must resolve to a value in pixel units.
+         on line 44 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-font-size must resolve to a pixel unit.
+         on line 46 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-line-height must resolve to a pixel unit.
+         on line 47 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+Completed 200 OK in 4021ms (Views: 4020.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-22178bff4dd14db5ce3873d16e183c0f.css?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:05:42 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:05:43 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:05:43 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 23:06:26 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+WARNING: Paremeter $from-context must resolve to a value in pixel units.
+         on line 43 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: Parameter $to-context must resolve to a value in pixel units.
+         on line 44 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-font-size must resolve to a pixel unit.
+         on line 46 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-line-height must resolve to a pixel unit.
+         on line 47 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+Completed 200 OK in 4100ms (Views: 4098.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/application-c1577227bc84ea427ba446a6d067c6a8.css?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:06:31 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 23:06:43 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+WARNING: Paremeter $from-context must resolve to a value in pixel units.
+         on line 43 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: Parameter $to-context must resolve to a value in pixel units.
+         on line 44 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-font-size must resolve to a pixel unit.
+         on line 46 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-line-height must resolve to a pixel unit.
+         on line 47 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+Completed 200 OK in 3905ms (Views: 3903.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:06:47 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:06:48 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:06:48 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:06:48 +1000
+
+
+Started GET "/" for ::1 at 2015-05-04 23:07:26 +1000
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+WARNING: Paremeter $from-context must resolve to a value in pixel units.
+         on line 43 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: Parameter $to-context must resolve to a value in pixel units.
+         on line 44 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_units.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-font-size must resolve to a pixel unit.
+         on line 46 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+WARNING: $base-line-height must resolve to a pixel unit.
+         on line 47 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss
+         from line 4 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_typography.scss
+         from line 2 of /Users/jcleefw/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/_compass.scss
+         from line 8 of /Library/WebServer/projects/projects/ga/fundamentals/wdiexercise/project/itcounts/app/assets/stylesheets/application.scss
+
+
+Completed 200 OK in 4215ms (Views: 4214.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5ba199f8653e7cf001fcaf6cfb137138.css?body=1" for ::1 at 2015-05-04 23:07:30 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/category_icons/plants-ebadef63d37b14695509793b268823c3.svg" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/completed-tick-9ef1158459095328b435c586729b75fc.svg" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/assets/inner-circle-474ac198f9b6fe6ef5bdd9ae0aef99be.png" for ::1 at 2015-05-04 23:07:31 +1000
+
+
+Started GET "/categories" for ::1 at 2015-05-04 23:10:39 +1000
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.accordion-3b7eca4867307e7e6e6053d557ba15e0.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation-240ea0d8c93fac7fd90870a67876fc6e.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.abide-3f9504158fca3c4dc742953e3ff68857.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.alert-dce95939c8c7fb398166b9bd69beb18a.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.clearing-4aebe5c37b64268e13e8594b8cd3e35f.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.dropdown-79fcab3a6c9fe379c49ffea3d2aab388.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.joyride-4753fc7c8d75122238001046c63643ee.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.equalizer-4fdd71b729ef25cb392ea46ea95a5454.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.interchange-ed0999495646a788d4e83fed14534193.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.magellan-39149b237eee8d81b5681b2f2b128c73.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.offcanvas-fcd5d92f99f588b85701c07704315b5e.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.orbit-4f85f07dd943c6bd3634177579e21c92.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.reveal-4cc6273d77773f112faa339136e4aa82.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.slider-65395bbde72e935f5b1cd6f984382e3e.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.tab-51bcfde6298ea45810c47680dc98e7ce.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.tooltip-46991b4569fdff5198b4127ec97a2bf1.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation-7b8bc353938c10b19c0828ec17679953.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/application-624c3129c9c2c08b2107f0e226fe89dc.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/logo-f26329643d6188b77319562a77de7c2c.svg" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/foundation/foundation.topbar-5eb2de40fc8776b7bc223b60234c7c8f.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-05-04 23:10:40 +1000
