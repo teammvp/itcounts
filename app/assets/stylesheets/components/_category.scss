@@ -12,15 +12,18 @@
       font-size: 1em;
     }
     svg{
-      height: 120px; 
+      height: 120px;
       width: 100%;
+      &:hover #cat-icons{
+        fill: $yellow;
+      }
     }
   }
 
-  .odd {
-    @include background-image(linear-gradient($light-green, $turquoise));
-  }
-  .even {
-    @include background-image(linear-gradient( $turquoise, $light-green));
-  }
+  // .odd {
+  //   @include background-image(linear-gradient($light-green, $turquoise));
+  // }
+  // .even {
+  //   @include background-image(linear-gradient( $turquoise, $light-green));
+  // }
 }
