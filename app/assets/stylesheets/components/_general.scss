@@ -30,7 +30,11 @@ footer {
   bottom: 0;
   background-color: $dark-gray;
   color: $white;
+}
 
+article {
+  background-color: $white;
+  position: relative;
 }
 
 /* general classes that will be shared in all pages */
