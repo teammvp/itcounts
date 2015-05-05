@@ -1,45 +1,33 @@
 <main>
-
-	<article class="cat-show">
-
-		<div class="overlay-progress"></div>
-		<div class="cat-info">
-			<div class="cat-image">
-				<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
-			</div><!--
-			--><div class="goal-info">
-				<h1>Shower</h1>
-				<p>Set phone timer to 7mins shower time!</p>
-			</div>
-			<div class="participation-info">
-				<p><span class="joined">500</span> others on-board</p>
-
-				<p>Target:<span class="target">700</span></p>
-			</div>
-		</div>
-
-	</article>
-
-
 	<% @goals.each do |goal| %>
+	<a href="<%= single_goal_path(goal.title) %>">
+		<article class="cat-show">
 
-	<article class="cat-show">
-		<div class="cat-image">
-			<img src=<%= asset_path( @category.image_url ) %>
-			 alt=<%= @category.title %>>
-		</div>
-		<div class="goal-info">
-   			<h1><%= goal.title %></h1>
-   			<p><%= goal.description  %></p>
-   			<p><%= link_to 'LINK', single_goal_path(goal.title) %></p>
-		</div>
+			<div class="overlay-progress"></div>
+			<div class="cat-info">
+				<div class="cat-image">
+					<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
+				</div><!--
+				--><div class="goal-info">
+					<h1><%= goal.title %></h1>
+		   		<p><%= goal.description  %></p>
 
-		<div class="participation-info">
-			<p><span class="joined">500</span> others on-board</p>
-			<p>Target:<span class="target">700</span></p>
-		</div>
-	</article>
+				</div>
+				<div class="participation-info">
+					<p><span class="joined">500</span> others on-board</p>
 
+					<p>Target:<span class="target">700</span></p>
+				</div>
+			</div>
+
+		</article>
+	</a>
 	<% end %>
-
 </main>
+
+<script>
+	$(document).ready(function() {
+		// write function to generate progress bar according to statistic
+
+	});
+</script>

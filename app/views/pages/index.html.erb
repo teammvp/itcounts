@@ -3,12 +3,14 @@
     <div>
       <h1 class="landin"><span class="landing-title-gold">7201 </span><%= @fact.description %></h1>
     </div>
+      <a href="<%= single_category_path(@fact.category.title) %>">
 
-      <%= link_to 'Should link via DIV', single_category_path(@fact.category.title) %>
       <div class="rnd-btn">
         <div class="category-logo">
           <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
+          <p>Im<span>In</span></p>
         </div>
       </div>
+      </a>
   </main>
 </div>
