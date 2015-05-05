@@ -1,9 +1,10 @@
 <div class="row">
   <main class="small-12 columns">
     <div class="goals">
-      <h1>Plant a tree</h2>
-      <p>When? 3 months</p>
+      <h1><%= @goal.title %></h2>
+      <p><%= @goal.description %></p>
     </div>
+
     <div class="rnd-btn complete-btn">
       <div class="category-logo">
         <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
@@ -12,18 +13,20 @@
         <img class="done hide" src="<%= asset_path( 'completed-tick.svg' ) %>" alt="">
       </div>
     </div>
+
     <div class="row goal-stats">
       <div class="small-3">
-        <h1>JOINED</h1>
-        <p><span>123</span></p>
+        <h1>Joined</h1>
+        <p><span><%= @goal.users.length %></span></p>
       </div>
       <div class="small-3">
-        <h1>COMPLETED</h1>
-        <p><span>42</span></p>
+        <h1>Completed</h1>
+        <p><span><%= @goal.users.length / 2 %></span></p>
       </div>
+
       <div class="small-3">
-        <h1>SAVED</h1>
-        <p><span>42<em>TREES</em></span></p>
+        <h1>Saved</h1>
+        <p><span><%= @goal.users.length * 4 %><em>Trees</em></span></p>
       </div>
     </div>
   </main>
