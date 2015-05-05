@@ -24,12 +24,29 @@ main {
   color: $dark-gray;
 }
 
+section{
+  background-color: $light-gray;
+  font-size:0.8em;
+}
 footer {
-  height: 50px;
   position:fixed;
   bottom: 0;
   background-color: $dark-gray;
   color: $white;
+
+  .bottom {
+    padding-top:$small-pad;
+    p{
+      display:inline;
+      text-align: left;
+      font-size: 0.6em;
+      vertical-align: top;
+      &:last-child{
+        text-align: right;
+        float: right;
+      }
+    }
+  }
 }
 
 article {
