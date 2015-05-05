@@ -1,91 +1,22 @@
 <main>
+
+	<% @goals.each do |goal| %>
+
 	<article class="cat-show">
 		<div class="cat-image">
 			<img src="<%= asset_path( 'category_icons/plants.svg' ) %>" alt="">
-		</div><!--
-		--><div class="goal-info">
-			<h1>Shower</h1>
-			<p>Set phone timer to 7mins shower time!</p>
 		</div>
+		<div class="goal-info">
+   			<H1><%= goal.title %></H1>
+   			<P><%= goal.description  %></P>
+		</div>
+
 		<div class="participation-info">
 			<p><span class="joined">500</span> others on-board</p>
-
 			<p>Target:<span class="target">700</span></p>
 		</div>
 	</article>
-	<article class="cat-show">
-		<div class="cat-image">
-			<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
-		</div><!--
-		--><div class="goal-info">
-			<h1>Brushing Teeeth</h1>
-			<p>Turning your tap off whilst brushing your teeth.</p>
-		</div>
-		<div class="participation-info">
-			<p><span class="joined">2000</span> others on-board</p>
+	
+	<% end %>
 
-			<p>Target:<span class="target">2500</span></p>
-		</div>
-	</article>
-
-	<article class="cat-show">
-		<div class="cat-image">
-			<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
-		</div><!--
-		--><div class="goal-info">
-			<h1>Washing Car</h1>
-			<p>Wash your car or boat on the lawn!</p>
-		</div>
-		<div class="participation-info">
-			<p><span class="joined">2000</span> others on-board</p>
-
-			<p>Target:<span class="target">2500</span></p>
-		</div>
-	</article>
 </main>
-
-<!-- <div>
-
-	<h3>Reducing your shower time!</h3>
-	<h5>shower</h5>
-	<button type="button">"I'm in!</button>
-	<p>200 people involved</p>
-
-</div>
-
-<div>
-
-	<h3>Turning your tap off whilst brushing your teeth.</h3>
-	<h5>Brushing Teeeth</h5>
-	<button type="button">"I'm in!</button>
-	<p>50 people involved</p>
-
-</div>
-
-<div>
-
-	<h3>Wash your car or boat on the lawn!</h3>
-	<h5>Washing Car</h5>
-	<button type="button">"I'm in!</button>
-	<p>70 people involved</p>
-
-</div>
-
-<div>
-
-	<h3>Replace any leak seals on your taps in and around the house!</h3>
-	<h5>Leaking Taps</h5>
-	<button type="button">"I'm in!</button>
-	<p>20 people involved</p>
-
-</div>
-
-<div >
-
-	<h3>Changing your shower head to "low flow"!</h3>
-	<h5>Shower Head</h5>
-	<button type="button">"I'm in!</button>
-	<p>10 people involved</p>
-
-</div> -->
-
