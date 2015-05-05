@@ -1,2 +1,14 @@
-<h1>INDEX</h1>
-<p>Should have the landing page here</p>
+<div class="row">
+  <main class="small-12 columns landing-blue">
+    <div>
+      <h1 class="landin"><span class="landing-title-gold">7201 </span><%= @fact.description %></h1>
+    </div>
+
+      <%= link_to 'Should link via DIV', single_category_path(@fact.category.title) %>
+      <div class="rnd-btn">
+        <div class="category-logo">
+          <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
+        </div>
+      </div>
+  </main>
+</div>
