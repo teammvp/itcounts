@@ -14,11 +14,12 @@
   width: 200px;
   height: 200px;
   background:
-    url(<%= asset_path 'inner-circle.png' %>) no-repeat center,
-    url(<%= asset_path 'quarter-circle.svg' %>) no-repeat top left,
-    linear-gradient(rgba($white, 0.5),rgba($white, 0.5)),
-    url(<%= asset_path 'half-circle.svg' %>) no-repeat top left;
-  background-size: 75%, 50%, 100%, 50%;
+     url(<%= asset_path 'inner-circle.png' %>) no-repeat center,
+  //   url(<%= asset_path 'quarter-circle.svg' %>) no-repeat top left,
+     linear-gradient(rgba($white, 0.5),rgba($white, 0.5));
+  //   url(<%= asset_path 'half-circle.svg' %>) no-repeat top left;
+  // background-size: 75%, 50%, 100%, 50%;
+  background-size: 75%, 100%;
   border-radius: 125px;
   margin: 0 auto;
   position: relative;

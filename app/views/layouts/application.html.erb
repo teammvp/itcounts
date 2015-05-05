@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-
+    <%= stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Montserrat" %>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -20,9 +20,18 @@
       </header>
     </div>
     <%= yield %>
-
+    <section class="large-12 columns">
+      <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
+      <p>social button here</p>
+      <p>sponsor logo here</p>
+    </section>
     <footer class="large-12 columns">
-      <p>© MVP 2015</p>
+
+      <div class="bottom">
+        <p class="made">App Development - Made in Melbourne</p>
+        <p class="copyright">© MVP 2015</p>
+      </div>
+
     </footer>
 
   </body>
