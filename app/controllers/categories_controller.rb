@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
   def show
     # return all the goals associated with the category
     @goals = Category.find_by(:title => params[:category]).goals
-
+    @category = Category.find_by(:title => params[:category])
   end
 
 end

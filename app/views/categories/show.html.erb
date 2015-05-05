@@ -25,11 +25,13 @@
 
 	<article class="cat-show">
 		<div class="cat-image">
-			<img src="<%= asset_path( 'category_icons/plants.svg' ) %>" alt="">
+			<img src=<%= asset_path( @category.image_url ) %>
+			 alt=<%= @category.title %>>
 		</div>
 		<div class="goal-info">
-   			<H1><%= goal.title %></H1>
-   			<P><%= goal.description  %></P>
+   			<h1><%= goal.title %></h1>
+   			<p><%= goal.description  %></p>
+   			<p><%= link_to 'LINK', single_goal_path(goal.title) %></p>
 		</div>
 
 		<div class="participation-info">
