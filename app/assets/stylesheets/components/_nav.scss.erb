@@ -1,0 +1,82 @@
+#primary-nav {
+  min-height: 100px;
+  width: 100%;
+  font-weight: bold;
+  position: relative;
+  display: none;
+  list-style: none;
+  color: $dark-gray;
+  li {
+    display: block;
+    list-style:none;
+    padding:$small-pad $normal-pad+10px;
+    width: 100%;
+    background-color: $white;
+    &:hover {
+      background-color:rgba($light-gray,.5);
+      a {
+        color: $cadet-blue;
+      }
+
+    }
+  }
+  a{
+    color: $orange;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+  }
+}
+#nav-btn {
+
+  width: 25%;
+  display:inline-block;
+  position: absolute;
+  top: 22px;
+
+  a#pull {
+    display: inline;
+    width: 100%;
+    position: relative;
+    color: $orange;
+    padding: 0 20px;
+    text-decoration: none;
+    position: absolute;
+    top: -3px;
+    font-size: 1.7em;
+  }
+}
+.navbar-toggle {
+  border:none;
+  background-color: $white;
+  display:inline-block;
+  position: relative;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  .icon-bar{
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: $orange;
+  }
+
+  .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+}

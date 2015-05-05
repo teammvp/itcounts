@@ -5,8 +5,7 @@
 }
 
 header {
-
-  @include box-shadow(rgba($black,.3) 2px 2px 10px);
+  //@include box-shadow(rgba($black,.3) 2px 2px 10px);
   z-index: 10;
   h1{
     text-indent: -9999px;
@@ -14,6 +13,10 @@ header {
   }
   img{
     padding: $small-pad 0 $normal-pad;
+  }
+  .header-logo{
+    width: 73%;
+    display: inline-block;
   }
 }
 main {
