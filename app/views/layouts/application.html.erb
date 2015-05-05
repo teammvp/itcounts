@@ -15,10 +15,28 @@
   <body>
     <div class="row">
       <header class="large-12 columns">
-        <h1>itcounts</h1>
-        <img src="<%= asset_path( 'logo.svg' ) %>">
+        <div class="header-logo">
+          <h1>itcounts</h1>
+          <img src="<%= asset_path( 'logo.svg' ) %>">
+        </div>
+        <nav id="nav-btn">
+          <button class="navbar-toggle collapsed" type="button" id="pull" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <a href="#" id="pull">Menu</a>
+          </button>
+        </nav>
+
       </header>
     </div>
+    <ul id="primary-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/categories">Categories</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
     <%= yield %>
     <section class="large-12 columns">
       <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
@@ -33,6 +51,24 @@
       </div>
 
     </footer>
+    <script>
+      $(function() {
+        var pull    = $('#pull');
+          menu    = $('#primary-nav');
+          menuHeight  = menu.height();
 
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+
+        $(window).resize(function(){
+              var w = $(window).width();
+              if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+              }
+          });
+      });
+    </script>
   </body>
 </html>
