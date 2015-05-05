@@ -1,5 +1,30 @@
-<h1>SHOW SINGLE GOAL</h1>
-
-<p><%= @goal.title %></p>
-<p><%= @goal.description %></p>
-<p><%= @goal.duration %></p>
+<div class="row">
+  <main class="small-12 columns">
+    <div class="goals">
+      <h1>Plant a tree</h2>
+      <p>When? 3 months</p>
+    </div>
+    <div class="rnd-btn complete-btn">
+      <div class="category-logo">
+        <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
+      </div>
+      <div class="goal-completed">
+        <img class="done hide" src="<%= asset_path( 'completed-tick.svg' ) %>" alt="">
+      </div>
+    </div>
+    <div class="row goal-stats">
+      <div class="small-3">
+        <h1>JOINED</h1>
+        <p><span>123</span></p>
+      </div>
+      <div class="small-3">
+        <h1>COMPLETED</h1>
+        <p><span>42</span></p>
+      </div>
+      <div class="small-3">
+        <h1>SAVED</h1>
+        <p><span>42<em>TREES</em></span></p>
+      </div>
+    </div>
+  </main>
+</div>
