@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Goal.create([{ title: 'water', description: 'water saving description',  duration: '1', category_id: 1 }]);
+Goal.create([{ title: 'water', description: 'Use a tim',  duration: '1', category_id: 1 }]);
 Goal.create([{ title: 'carbon', description: 'carbon saving description', duration: '60', category_id: 2 }]);
 Goal.create([{ title: 'power',description: 'power saving description', duration: '20', category_id: 3 }]);
 Goal.create([{ title: 'recycle',description: 'recycling saving description', duration: '2', category_id: 4 }]);
@@ -25,3 +25,8 @@ User.create([{ username: 'JCLee', token: '', email: 'us@us.com' }]);
 User.create([{ username: 'JWolff', token: '', email: 'some@some.com' }]);
 User.create([{ username: 'LShillabeer', token: '', email: 'who@who.com' }]);
 User.create([{ username: 'AllOfUs', token: '', email: 'where@where.com' }]);
+
+UserGoal.create([{user_id: 1, goal_id: 1}, {user_id:1, goal_id: 2}]);
+UserGoal.create([{user_id: 2, goal_id: 1}, {user_id:2, goal_id: 3}, {user_id:2, goal_id: 4}]);
+UserGoal.create([{user_id: 3, goal_id: 1}]);
+UserGoal.create([{user_id: 4, goal_id: 1}, {user_id:4, goal_id: 2}, {user_id:4, goal_id: 3}, {user_id:4, goal_id: 4}]);
