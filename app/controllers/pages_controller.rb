@@ -6,7 +6,10 @@ class PagesController < ApplicationController
     #   - pick a random fact from that category
     #   - make that fact available on the view
     category_count = Category.all().length
-    random_category = (1..category_count).to_a.sample
+    
+    # HARD CODED CATEGORY
+    random_category = 1
+    # random_category = (1..category_count).to_a.sample
     
     facts = Category.find_by(:id => random_category).facts
     facts_found = facts.length
