@@ -2,33 +2,15 @@
   <main class="small-12 columns">
     <ul class="row inline-list cat-list">
 
+      <% @categories.each do |category| %>
       <li class="small-6">
-        <div class="category odd">
-         <%=  inline_svg("category_icons/plants.svg") %>
-        <h1>PLANT</h1>
+        <div class="category">
+          <%=  inline_svg(category.image_url) %>
+          <h1><%= category.title %></h1>
         </div>
       </li>
-       <li class="small-6">
-        <div class="category odd">
-          <%=  inline_svg("category_icons/energy.svg") %>
-          <h1>ENERGY</h1>
-        </div>
-      </li>
-      <li class="small-6">
-        <div class="category even">
-          <%=  inline_svg("category_icons/water.svg") %>
-          <h1>WATER</h1>
-        </div>
-      </li>
-      <li class="small-6">
-        <div class="category even">
-          <%=  inline_svg("category_icons/footprint.svg") %>
-          <h1>CARBON</h1>
-        </div>
-      </li>
+      <% end %>
+
     </ul>
   </main>
 </div>
-
-
-
