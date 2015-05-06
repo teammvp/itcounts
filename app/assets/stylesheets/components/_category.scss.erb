@@ -30,22 +30,27 @@
   width: 100%;
   text-align: left;
   height: 120px;
-
   margin-bottom: $small-pad;
 
   //@include box-shadow(rgba($black,.3) 1px 1px 5px);
   .overlay-progress{
     height: 120px;
-    width: 50%;
     position: absolute;
     opacity: 0.5;
     z-index: 1;
     background: url(<%= asset_path 'bg/progress-bg.png' %>) ;
+    width:0;
+
   }
   .cat-info {
     z-index: 5;
     position: absolute;
     width: 100%;
+  }
+}
+.cat-show:hover {
+  .goal-info {
+    color: $cadet-blue;
   }
 }
 
@@ -92,3 +97,5 @@
     }
   }
 }
+
+
