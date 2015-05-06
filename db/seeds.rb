@@ -6,10 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Goal.create([{ title: 'shower-timer', description: 'Use a timer in the shower.',  duration: '1', category_id: 1 }]);
-Goal.create([{ title: 'dont-drive', description: "Don't drive to work.", duration: '60', category_id: 2 }]);
-Goal.create([{ title: 'lights-off',description: 'Turn the lights off when not being used.', duration: '20', category_id: 3 }]);
-Goal.create([{ title: 'recycle-things',description: 'Recycle everything!', duration: '2', category_id: 4 }]);
+Goal.create([{ title: 'shower-timer', description: 'Use a timer in the shower.',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
+Goal.create([{ title: 'leaky-taps', description: 'Fix a leaky tap.',  duration: 30, multiplier: 200, target: 1000, category_id: 1 }]);
+Goal.create([{ title: 'dont-drive', description: "Don't drive to work.", duration: 60, multiplier: 5, target: 500, category_id: 2 }]);
+Goal.create([{ title: 'lights-off',description: 'Turn the lights off when not being used.', duration: 20, multiplier: 5, target: 500, category_id: 3 }]);
+Goal.create([{ title: 'recycle-things',description: 'Recycle everything!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 
 Category.create([{ title: 'water',description: 'water saving description', image_url: 'category_icons/water.svg' }]);
 Category.create([{ title: 'carbon',description: 'carbon saving description', image_url: 'category_icons/footprint.svg' }]);
