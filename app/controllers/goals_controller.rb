@@ -1,4 +1,5 @@
 class GoalsController < ApplicationController
+  add_breadcrumb "Home", :root_path, :options => { :title => "Home" }
   add_breadcrumb "Category", :categories_path
   #add_breadcrumb params[:category], :single_category_path
 
@@ -14,7 +15,7 @@ class GoalsController < ApplicationController
   def update
     # updates the content of a specific goal
     goal = Goal.find_by(:title => params[:goal_title])
-    
+
     # HARD-CODED USER
     test_user = User.find_by(:id => 1)
     make_user_goal(test_user, goal)
@@ -35,7 +36,7 @@ class GoalsController < ApplicationController
     return result
   end
 
-  
+
   def make_user_goal(user, goal)
     if user == nil || goal == nil
       raise "User-Goal Generation Error"
