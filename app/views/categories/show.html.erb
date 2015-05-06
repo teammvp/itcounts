@@ -23,11 +23,52 @@
 		</article>
 	</a>
 	<% end %>
+
+		<article class="cat-show">
+
+			<div class="overlay-progress"></div>
+			<div class="cat-info">
+				<div class="cat-image">
+					<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
+				</div><!--
+				--><div class="goal-info">
+					<h1>blak</h1>
+		   		<p>werwerwerwerwer</p>
+
+				</div>
+				<div class="participation-info">
+					<p><span class="joined">100</span> others on-board</p>
+
+					<p>Target:<span class="target">700</span></p>
+				</div>
+			</div>
+
+		</article>
+
 </main>
 
 <script>
 	$(document).ready(function() {
 		// write function to generate progress bar according to statistic
+		$.each($('article'), function() {
 
+			$progressBar = $(this).find('.overlay-progress');
+			$joined = $(this).find('.joined');
+			$target = $(this).find('.target');
+			$percentage = $joined.text() / $target.text() * 100;
+
+			$progressBar.velocity(
+	      {
+	        width: $percentage+"%",
+	        backgroundColor: "#306eff"
+	      },
+	      {
+	        delay: 300,
+	        easing: "easeOut",
+	        duration: 850
+	      });
+			console.log($percentage);
+			//console.log($progressBar, $joined, $target);
+  	});
 	});
 </script>

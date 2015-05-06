@@ -97,6 +97,11 @@ article {
   position: relative;
 }
 
+a, a:visited {
+  color:inherit;
+}
+
+
 /* general classes that will be shared in all pages */
 .show {
   display: block;
