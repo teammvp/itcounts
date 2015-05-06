@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  add_breadcrumb "Home", :root_path, :options => { :title => "Home" }
   add_breadcrumb "Category", :categories_path
   def index
     # display all the current categories

@@ -16,23 +16,23 @@
   <body>
     <div class="row">
       <header class="large-12 columns">
-        <div class="header-logo">
-<!--         this is the anchor tag for itcounts -->
-          <a href="/"><h1>itcounts</h1>
-          <img src="<%= asset_path( 'logo.svg' ) %>">
-          </a>  
-          </div>
-
         <nav id="nav-btn">
           <button class="navbar-toggle collapsed" type="button" id="pull" data-toggle="collapse" data-target=".bs-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
-
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <a href="#" id="pull">Menu</a>
           </button>
         </nav>
+        <div class="header-logo">
+        <!-- this is the anchor tag for itcounts -->
+          <a href="/">
+            <h1>itcounts</h1>
+            <img src="<%= asset_path( 'logo.svg' ) %>">
+          </a>
+        </div>
+
+
 
       </header>
     </div>
@@ -42,21 +42,25 @@
       <li><a href="#">Contact</a></li>
     </ul>
     <div id="breadcrumbs">
-      <%= render_breadcrumbs :separator => ' / ' %>
+      <%= render_breadcrumbs :separator => ' <em>></em> ' %>
     </div>
     <%= yield %>
 
-    <section class="large-12 columns">
-      <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
-      <ul>
-      <%=  inline_svg("social_network/facebook24.svg") %>
-      <%=  inline_svg("social_network/linkedin12.svg") %>
-      <%=  inline_svg("social_network/twitter47.svg") %>
-      <%=  inline_svg("social_network/google2.svg") %>
-      </ul>
+    <section class="large-12 columns footer-section">
+      <div class="statement">
+        <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
+      </div>
+      <div class="social-btn">
+        <ul>
+          <li><a href=""><%=  inline_svg("social_network/facebook24.svg") %></a></li>
+          <li><a href=""><%=  inline_svg("social_network/linkedin12.svg") %></a></li>
+          <li><a href=""><%=  inline_svg("social_network/twitter47.svg") %></a></li>
+          <li><a href=""><%=  inline_svg("social_network/google2.svg") %></a></li>
+        </ul>
+      </div>
       <aside>
-      <p>Sponsored by:</p>
-      <img src="<%= asset_path( 'social_network/ga.png' )  %>">
+        <p>Sponsored by:</p>
+        <img src="<%= asset_path( 'social_network/ga.png' )  %>">
       </aside>
     </section>
 
