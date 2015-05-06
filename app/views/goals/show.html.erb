@@ -33,7 +33,7 @@
 
   <script>
     $( document ).ready(function(){
-      
+      <% if logged_in? %>
       // Log that the user clicked the button
       $(".rnd-btn").click(function(){
         $.ajax({
@@ -51,7 +51,11 @@
           }
         });
       });
-
+      <% else %>
+      $(".rnd-btn").click(function(){
+        window.location.href = "/login"
+      });
+      <% end %>
     });
   </script>
 </div>

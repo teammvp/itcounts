@@ -16,7 +16,6 @@ Goal.create([{ title: 'sensor-lights',description: 'Install some sensor lights o
 Goal.create([{ title: 'recycle-paper',description: 'Recycle your newspapers everyday!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'save-paper',description: 'Subscribe to digital editions of the newspaper today!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'recycle-food',description: 'Put your food scraps into compost everyday!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
-Goal.create([{ title: 'leftover-from-dinner',description: 'Mix up your leftovers for a goulash tonight, and freeze!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'recycle-water',description: 'Drain shower water into the gardens everyday!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'save-from-tap',description: 'Fill bucket with the cold water before the hot water begins!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 
