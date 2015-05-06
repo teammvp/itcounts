@@ -7,18 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Goal.create([{ title: 'shower-timer', description: 'Use a timer in the shower today!',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
-Goal.create([{ title: 'shower-time', description: 'Reduce your shower time by a minute today!',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
-Goal.create([{ title: 'shower-time', description: 'Convert your "high flow" shower head to "low flow" this week!',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
+Goal.create([{ title: 'reduce-shower', description: 'Reduce your shower time by a minute today!',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
+Goal.create([{ title: 'low-flow', description: 'Convert your "high flow" shower head to "low flow" this week!',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
 Goal.create([{ title: 'leaky-taps', description: 'Fix a leaky tap, this week!.',  duration: 30, multiplier: 200, target: 1000, category_id: 1 }]);
 Goal.create([{ title: 'dont-drive', description: "Don't drive to work, today, catch a train, tram or ride a bike!", duration: 60, multiplier: 5, target: 500, category_id: 2 }]);
 Goal.create([{ title: 'lights-off',description: 'Turn the lights off when not being used, tonight!', duration: 20, multiplier: 5, target: 500, category_id: 3 }]);
-Goal.create([{ title: 'lights-off',description: 'Install some sensor lights outside or the garage this week!', duration: 20, multiplier: 5, target: 500, category_id: 3 }]);
+Goal.create([{ title: 'sensor-lights',description: 'Install some sensor lights outside or the garage this week!', duration: 20, multiplier: 5, target: 500, category_id: 3 }]);
 Goal.create([{ title: 'recycle-paper',description: 'Recycle your newspapers everyday!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'save-paper',description: 'Subscribe to digital editions of the newspaper today!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'recycle-food',description: 'Put your food scraps into compost everyday!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
-Goal.create([{ title: 'recycle-food',description: 'Mix up your leftovers for a goulash tonight, and freeze!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
+Goal.create([{ title: 'leftover-from-dinner',description: 'Mix up your leftovers for a goulash tonight, and freeze!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 Goal.create([{ title: 'recycle-water',description: 'Drain shower water into the gardens everyday!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
-Goal.create([{ title: 'recycle-water',description: 'Fill bucket with the cold water before the hot water begins!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
+Goal.create([{ title: 'save-from-tap',description: 'Fill bucket with the cold water before the hot water begins!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 
 Category.create([{ title: 'water',description: 'water saving description', image_url: 'category_icons/water.svg' }]);
 Category.create([{ title: 'carbon',description: 'carbon saving description', image_url: 'category_icons/footprint.svg' }]);
@@ -37,10 +37,10 @@ Fact.create([{description: '17 trees can absorb the carbon dioxide emitted from 
 Fact.create([{description: 'Power costs approximately 10c per kilowatt hour, so switch off!', category_id: 4, icon: '', background_image: '' }]);
 Fact.create([{description: 'Composting food scraps reduces the methane levels in the atmosphere!', category_id: 4, icon: '', background_image: '' }]);
 
-User.create([{ username: 'JCLee', token: '', email: 'us@us.com' }]);
-User.create([{ username: 'JWolff', token: '', email: 'some@some.com' }]);
-User.create([{ username: 'LShillabeer', token: '', email: 'who@who.com' }]);
-User.create([{ username: 'AllOfUs', token: '', email: 'where@where.com' }]);
+User.create([{ username: 'JCLee', password: '123', email: 'us@us.com', password_salt: 'abcde' }]);
+User.create([{ username: 'JWolff', password: '123', email: 'some@some.com', password_salt: 'abcde' }]);
+User.create([{ username: 'LShillabeer', password: '123', email: 'who@who.com', password_salt: 'abcde' }]);
+User.create([{ username: 'AllOfUs', password: '123', email: 'where@where.com', password_salt: 'abcde' }]);
 
 UserGoal.create([{user_id: 1, goal_id: 1}, {user_id:1, goal_id: 2}]);
 UserGoal.create([{user_id: 2, goal_id: 1}, {user_id:2, goal_id: 3}, {user_id:2, goal_id: 4}]);
