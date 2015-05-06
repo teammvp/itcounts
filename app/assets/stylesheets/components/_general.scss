@@ -31,6 +31,39 @@ section{
   background-color: $light-gray;
   font-size:0.8em;
 }
+
+//media icons
+section ul img{
+  display: inline;
+  float: right;
+  right: 10%;
+  width: 20px;
+  height: 20px;
+}
+
+//comments section
+section p {
+  float: left;
+  max-width: 150px;
+}
+
+//sponsored comment
+section aside p {
+  position: absolute;
+  top: 60%;
+  right: 6%;
+}
+
+//ga logo
+section aside img {
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: 80%;
+  right: 1%;
+
+}
+
 footer {
   position:fixed;
   bottom: 0;
