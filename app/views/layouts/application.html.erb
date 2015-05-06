@@ -20,11 +20,21 @@
       </header>
     </div>
     <%= yield %>
+
     <section class="large-12 columns">
       <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
-      <p>social button here</p>
-      <p>sponsor logo here</p>
+      <ul>
+      <img src="<%= asset_path( 'facebook.png' ) %>">
+      <img src="<%= asset_path( 'linkedin.png' ) %>">
+      <img src="<%= asset_path( 'twitter.png' ) %>">
+      <img src="<%= asset_path( 'google.png' ) %>">
+      </ul>
+      <aside>
+      <p>Sponsored by:</p>
+      <img src="<%= asset_path( 'ga.png' )  %>">
+      </aside>
     </section>
+
     <footer class="large-12 columns">
 
       <div class="bottom">

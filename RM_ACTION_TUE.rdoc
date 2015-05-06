@@ -1,0 +1,21 @@
+JC WORK;
+	-	created the css for each of the pages in app
+	-	design functions in each app using "Sketch"
+	-	further design modifications in the central button specs
+
+
+LUKE;
+	-	coding of all pages
+	-	setting up of pages in routes
+	-
+
+JEFF;
+	-	assisted in setting up code for goal pages
+	-	assisted in setting up code for css for goal pages
+	-	re-coded data pull for goal pages
+	-	css coding for water page
+	-	created the readme.rdocs
+
+GROUP:
+	-	met with UX people for comments on design features and user interface
+	-	met with UX people for color queries, design functions
