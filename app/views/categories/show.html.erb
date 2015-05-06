@@ -14,36 +14,15 @@
 
 				</div>
 				<div class="participation-info">
-					<p><span class="joined">500</span> others on-board</p>
+					<p><span class="joined"><%= goal.users.length %></span> others on-board</p>
 
-					<p>Target:<span class="target">700</span></p>
+					<p>Target:<span class="target"><%= goal.target %></span></p>
 				</div>
 			</div>
 
 		</article>
 	</a>
 	<% end %>
-
-		<article class="cat-show">
-
-			<div class="overlay-progress"></div>
-			<div class="cat-info">
-				<div class="cat-image">
-					<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
-				</div><!--
-				--><div class="goal-info">
-					<h1>blak</h1>
-		   		<p>werwerwerwerwer</p>
-
-				</div>
-				<div class="participation-info">
-					<p><span class="joined">100</span> others on-board</p>
-
-					<p>Target:<span class="target">700</span></p>
-				</div>
-			</div>
-
-		</article>
 
 </main>
 
