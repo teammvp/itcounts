@@ -33,11 +33,16 @@
             </a>
           </div>
         </div>
-
+        
+        <% if logged_in? %>
+        <div class="login-btn right">
+          <button><a href="/logout">Logout</a></button>
+        </div>
+        <% else %>
         <div class="login-btn right">
           <button><a href="/login">Login</a></button>
         </div>
-
+        <% end %>
 
       </header>
     </div>

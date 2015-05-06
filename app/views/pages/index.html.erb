@@ -2,12 +2,6 @@
   <main class="small-12 columns landing">
     <div class="landing-statement">
       <h1 class="landing-title">
-        <% if logged_in? %>
-          Logged in as <%= current_user.email %>.
-        <% else %>
-          <%= link_to "log in", login_path %>
-        <% end %>
-
         <span class="landing-title-highlight">7201 </span>
         <%= @fact.description %>
       </h1>
