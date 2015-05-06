@@ -21,10 +21,14 @@ header {
 }
 main {
   @include background-image(linear-gradient($light-green, $turquoise));
-  min-height: 500px;
+  height: 100%;
   text-align: center;
   padding-top: 20px;
   color: $dark-gray;
+}
+
+section.white-space-fix {
+  margin-top: -4px;
 }
 
 section{
@@ -39,19 +43,22 @@ section ul img{
   right: 10%;
   width: 20px;
   height: 20px;
+  padding-top: 5px;
 }
 
 //comments section
 section p {
   float: left;
   max-width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 //sponsored comment
 section aside p {
   position: absolute;
   top: 60%;
-  right: 6%;
+  right: 1%;
 }
 
 //ga logo
