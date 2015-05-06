@@ -6,9 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Goal.create([{ title: 'shower-timer', description: 'Use a timer in the shower.',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
-Goal.create([{ title: 'leaky-taps', description: 'Fix a leaky tap.',  duration: 30, multiplier: 200, target: 1000, category_id: 1 }]);
-Goal.create([{ title: 'dont-drive', description: "Don't drive to work.", duration: 60, multiplier: 5, target: 500, category_id: 2 }]);
+Goal.create([{ title: 'shower-timer', description: 'Use a timer in the shower today.',  duration: 1, multiplier: 5, target: 500, category_id: 1 }]);
+Goal.create([{ title: 'leaky-taps', description: 'Fix a leaky tap this week.',  duration: 30, multiplier: 200, target: 1000, category_id: 1 }]);
+Goal.create([{ title: 'dont-drive', description: "Don't drive to work this week.", duration: 60, multiplier: 5, target: 500, category_id: 2 }]);
 Goal.create([{ title: 'lights-off',description: 'Turn the lights off when not being used.', duration: 20, multiplier: 5, target: 500, category_id: 3 }]);
 Goal.create([{ title: 'recycle-things',description: 'Recycle everything!', duration: 2, multiplier: 5, target: 500, category_id: 4 }]);
 
@@ -17,7 +17,7 @@ Category.create([{ title: 'carbon',description: 'carbon saving description', ima
 Category.create([{ title: 'power',description: 'power saving description', image_url: 'category_icons/energy.svg' }]);
 Category.create([{ title: 'recycle',description: 'recycling saving description', image_url: 'category_icons/plants.svg' }]);
 
-Fact.create([{description: '1000 litres saved', category_id: 1, icon: '', background_image: '' }]);
+Fact.create([{description: '8230 people asdflkasdjf;lkajdsf this month.', category_id: 1, icon: '', background_image: '' }]);
 Fact.create([{description: '100 tonnes of CO2 saved', category_id: 2, icon: '', background_image: '' }]);
 Fact.create([{description: '1200kw reduction in consumption per day', category_id: 3, icon: '', background_image: '' }]);
 Fact.create([{description: 'recycling savings of 1 tonne', category_id: 4, icon: '', background_image: '' }]);
