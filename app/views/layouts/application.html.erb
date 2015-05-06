@@ -85,15 +85,15 @@
 
         $(pull).on('click', function(e) {
           e.preventDefault();
-          menu.slideToggle();
+          menu.slideToggle(400);
         });
 
-        $(window).resize(function(){
-              var w = $(window).width();
-              if(w > 320 && menu.is(':hidden')) {
-                menu.removeAttr('style');
-              }
-          });
+        // $(window).resize(function(){
+        //       var w = $(window).width();
+        //       if(w > 320 && menu.is(':hidden')) {
+        //         menu.removeAttr('style');
+        //       }
+        //   });
       });
     </script>
   </body>
