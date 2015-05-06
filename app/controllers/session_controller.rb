@@ -1,7 +1,8 @@
 class SessionController < ApplicationController
-
+  add_breadcrumb "Home", :root_path, :options => { :title => "Home" }
   # login form
   def new
+    add_breadcrumb "Login", :login_path, :options => { :title => "Login" }
   end
 
   def create
