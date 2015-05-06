@@ -1,0 +1,76 @@
+#login_form {
+  margin-top: $normal-pad;
+}
+input {
+  width: 80%;
+  border: none;
+  border-radius: $very-small-pad;
+  padding: 12px;
+  font-size: 0.9em;
+  margin: $small-pad 0 0;
+  &:focus {
+    outline:1px $white;
+  }
+}
+
+input[type="text"], input[type="password"] {
+
+  line-height: 1.5em;
+
+  background-color: rgba($white, 0.7);
+  color: $dark-gray;
+
+
+  @include input-placeholder {
+    color: darken($light-gray, 10%);
+  }
+}
+
+input[type="submit"] {
+  background-color: $dark-gray;
+  color: $white;
+}
+
+.forgotten {
+  padding: $small-pad 0 $medium-pad 0;
+  font-size: 0.8em;
+  color: $white;
+}
+
+.signup {
+  width: 80%;
+  border-top: 1px solid rgba($light-gray, 0.5);
+  margin: 0 auto;
+  button {
+    width: 100%;
+    border: none;
+    border-radius: $very-small-pad;
+    padding: 12px;
+    font-size: 0.9em;
+    margin: $medium-pad 0 100px;
+    color: $white;
+  }
+
+}
+
+.login-btn {
+  display: inline-block;
+  padding: $small-pad 0 $normal-pad;
+  button {
+    border:none;
+    background-color: $dark-gray;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: $white;
+    padding: $small-pad $small-pad;
+    border-radius: 7px;
+    a{
+      text-decoration: none;
+    }
+    &:hover{
+      background-color:lighten($dark-gray, 10%);
+      @include box-shadow(rgba($black,.3) 0px 0px 0px);
+    }
+  }
+}
+
