@@ -17,9 +17,12 @@
     <div class="row">
       <header class="large-12 columns">
         <div class="header-logo">
-          <h1>itcounts</h1>
+
+          <h1><a href="">itcounts</a></h1>
+
           <img src="<%= asset_path( 'logo.svg' ) %>">
         </div>
+
         <nav id="nav-btn">
           <button class="navbar-toggle collapsed" type="button" id="pull" data-toggle="collapse" data-target=".bs-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -43,14 +46,14 @@
     <section class="large-12 columns">
       <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
       <ul>
-      <img src="<%= asset_path( 'facebook24.svg' ) %>">
-      <img src="<%= asset_path( 'linkedin12.svg' ) %>">
-      <img src="<%= asset_path( 'twitter47.svg' ) %>">
-      <img src="<%= asset_path( 'google2.svg' ) %>">
+      <%=  inline_svg("social_network/facebook24.svg") %>
+      <%=  inline_svg("social_network/linkedin12.svg") %>
+      <%=  inline_svg("social_network/twitter47.svg") %>
+      <%=  inline_svg("social_network/google2.svg") %>
       </ul>
       <aside>
       <p>Sponsored by:</p>
-      <img src="<%= asset_path( 'ga.png' )  %>">
+      <img src="<%= asset_path( 'social_network/ga.png' )  %>">
       </aside>
     </section>
 
