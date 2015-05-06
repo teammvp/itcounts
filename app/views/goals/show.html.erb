@@ -45,10 +45,9 @@
           success: function(data){
             // if the user click is successfully logged, 
             // update the page to the new values
-            $('#joined').find("span").html(data['joined']);
-            $('#completed').find("span").html(data['completed']);
-            $('#saved').find("span").html(data['saved']);
-            console.log("yay, updated.");
+            $('#joined').find("span").html(data['joined']).css('color', 'lightgreen');
+            $('#completed').find("span").html(data['completed']).css('color', 'lightgreen');
+            $('#saved').find("span").html(data['saved']).css('color', 'lightgreen');
           }
         });
       });
