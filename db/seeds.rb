@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Goal.create([{ title: 'shower-timer', description: 'Set phone timer to 5 minutes while showering.',  duration: 1, multiplier: 60, target: 60, category_id: 1 }]);
+Goal.create([{ title: 'shower-timer', description: 'Set phone timer to 5 minutes while showering.',  duration: 1, multiplier: 60, target: 10, category_id: 1 }]);
 Goal.create([{ title: 'teeth-brushing', description: 'Turn off the tap while brushing your teeth.', duration:1, multiplier: 12, target: 100, category_id: 1 }])
 Goal.create([{ title: 'low-flow', description: 'Convert your "high flow" shower head to "low flow".',  duration: 1, multiplier: 5, target: 40, category_id: 1 }]);
 Goal.create([{ title: 'leaky-taps', description: 'Fix a leaky tap.',  duration: 30, multiplier: 200, target: 100, category_id: 1 }]);
