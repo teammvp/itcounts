@@ -28,7 +28,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+    # contact page (static)
   end
-  
+
 
 end

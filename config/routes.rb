@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get   '/'                  => 'pages#index',      :as => 'root'
   get   '/api'               => 'pages#api',        :as => 'api_stub'
   get   '/about'             => 'pages#about',      :as => 'about'
+  get   '/contact'           => 'pages#contact',    :as => 'contact'
   get   '/login'             => 'session#new',      :as => 'login'
   post  '/login'             => 'session#create'
   get   '/logout'            => 'session#destroy'
