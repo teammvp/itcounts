@@ -60,6 +60,9 @@ a, a:visited {
   color:inherit;
 }
 
+button {
+  border:none;
+}
 button:focus, button:active {
   outline:none;
   cursor: pointer;
