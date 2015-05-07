@@ -1,14 +1,17 @@
 <div class="row">
-  <main class="small-12 columns landing-blue">
-    <div>
-      <h1 class="landin"><span class="landing-title-gold">7201 </span><%= @fact.description %></h1>
+  <main class="small-12 columns landing">
+    <div class="landing-statement">
+      <h1 class="landing-title">
+        <span class="landing-title-highlight">7201 </span>
+        <%= @fact.description %>
+      </h1>
     </div>
       <a href="<%= single_category_path(@fact.category.title) %>">
 
       <div class="rnd-btn">
         <div class="category-logo">
-          <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
-          <p><span style="color:#99CA3C;">I'm</span><span style="color:#FD8458;">In</span></p>
+          <img src="<%= asset_path( 'category_icons/water.svg' ) %>">
+          <p><span class="im-span">I'm</span><span class="in-span">In</span></p>
         </div>
       </div>
       </a>

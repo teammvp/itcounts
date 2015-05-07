@@ -1,10 +1,29 @@
-<h2>LOGIN MAGIC</h2>
-<%= form_tag login_path, :method => :post do %>
-  <%= label_tag :email %>
-  <%= text_field_tag :email %>
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
+<div class="row">
+  <main>
+    <%= form_tag login_path, :method => :post, :id=>"login_form" do %>
 
-  <%= submit_tag 'Login' %> 
-<% end %>
+    <p>
+      <input type="text" name="email" placeholder="Email address">
+    </p>
+    <p>
+      <input type="password" name="password" placeholder="Password">
+    </p>
+    <p>
+      <input type="submit" value="Log In">
+    </p>
+
+  <% end %>
+  <div class="forgotten">
+    <p>
+      Forgotten your email address or password
+    </p>
+  </div>
+
+  <div class="signup">
+    <p>
+      <a href="/signup"><button>Sign Up</button></a>
+    </p>
+  </div>
+  </main>
+</div>

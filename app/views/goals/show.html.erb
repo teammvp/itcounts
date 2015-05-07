@@ -5,14 +5,14 @@
       <p><%= @goal.description %></p>
     </div>
 
-    <div class="rnd-btn complete-btn">
+    <button class="rnd-btn complete-btn">
       <div class="category-logo">
         <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
       </div>
-      <div class="goal-completed">
-        <img class="done hide" src="<%= asset_path( 'completed-tick.svg' ) %>" alt="">
+      <div class="goal-completed hide">
+        <img class="done" src="<%= asset_path( 'completed-tick.svg' ) %>" alt="">
       </div>
-    </div>
+    </button>
 
     <div class="row goal-stats">
       <div class="small-3" id="joined">
@@ -33,7 +33,7 @@
 
   <script>
     $( document ).ready(function(){
-      
+      <% if logged_in? %>
       // Log that the user clicked the button
       $(".rnd-btn").click(function(){
         $.ajax({
@@ -42,16 +42,24 @@
           data: {
             user: "something",
           },
+          context: this,
           success: function(data){
-            // if the user click is successfully logged, 
+            // if the user click is successfully logged,
             // update the page to the new values
-            $('#joined').find("span").html(data['joined']).css('color', 'lightgreen');
-            $('#completed').find("span").html(data['completed']).css('color', 'lightgreen');
-            $('#saved').find("span").html(data['saved']).css('color', 'lightgreen');
+            $('#joined').find("span").html(data['joined']).css('color', '#F7C03A');
+            $('#completed').find("span").html(data['completed']).css('color', '#F7C03A');
+            $('#saved').find("span").html(data['saved']).css('color', '#F7C03A');
+            $(this).prop('disabled', true);
+            $(this).find('.goal-completed').show();
+            $(this).find('.category-logo').removeAttr('position');
           }
         });
       });
-
+      <% else %>
+      $(".rnd-btn").click(function(){
+        window.location.href = "/login"
+      });
+      <% end %>
     });
   </script>
 </div>

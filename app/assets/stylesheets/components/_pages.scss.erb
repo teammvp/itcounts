@@ -1,22 +1,63 @@
-* {
-  font-family: $font-family;
-  padding: 0;
-  margin: 0;
+/* landing page */
+.landing {
+  background: url(<%= asset_path 'bg/progress-bg.png' %>);
 }
 
-.landing-blue {
-  background-image: none;
-  background-color: #15B6CB;
+.landing .rnd-btn {
+  background:
+     url(<%= asset_path 'inner-circle.png' %>) no-repeat center,
+     linear-gradient(rgba($light-green, 0.5),rgba($turquoise, 0.5));
+
+  background-size: 75%, 100%;
+  @include box-shadow(rgba($black,.3) 2px 2px 10px);
+  margin: 40px auto 100px;
+
+  &:focus,&:active {
+    @include box-shadow(rgba($black,.7) 2px 2px 10px);
+  }
 }
 
-.landing-title {
-  color: #FFFFFF;
+.landing .category-logo {
+  img{
+    width: 50%;
+  }
+  p{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 
-.landing-title-gold {
-  color: gold;
+.landing-statement {
+
+  h1.landing-title{
+    font-size: 1.5em;
+  }
 }
 
-.rnd-btn {
-  margin-top: 40px;
+.landing-title-highlight {
+  color: $yellow;
+}
+
+.im-span {
+  color: $light-green;
+}
+
+.in-span {
+  color: $dark-orange;
+}
+
+
+// breadcrumbs
+#breadcrumbs {
+  padding: 0 $normal-pad;
+  font-size: 0.8em;
+  color: $dark-gray;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  text-transform: capitalize;
+  em {
+    position: relative;
+    top: 1px;
+    font-style: normal;
+  }
 }
