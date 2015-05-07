@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
   validates_presence_of :email
-  validates_uniqueness_of :email
+  validates_uniqueness_of :email, :username
   validates_format_of :email, :with => /@/
 
   def self.authenticate(email, password)
@@ -26,4 +26,5 @@ class User < ActiveRecord::Base
       self.password_digest = BCrypt::Engine.hash_secret(password, password_salt)
     end
   end
+
 end
