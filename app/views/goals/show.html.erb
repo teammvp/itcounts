@@ -5,9 +5,9 @@
       <p><%= @goal.description %></p>
     </div>
     <div id="goal-message">
-        <h4>Click button and participate in this goal.</h4>
-      </div>
-    <button class="rnd-btn complete-btn">
+      <h3>Click button and participate in this goal.</h3>
+    </div>
+    <button class="rnd-btn complete-btn medium-pad">
       <h1 id="btn-text">Join?</h1>
       <div class="category-logo">
         <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
@@ -17,18 +17,18 @@
       </div>
     </button>
 
-    <div class="row goal-stats">
-      <div class="small-3" id="joined">
-        <h1>Joined</h1>
+    <div class="goal-stats large-pad">
+      <div class="small-3" id="joined" >
+        <h1 class="small-pad">Joined</h1>
         <p><span><%= @goal_details['joined'] %></span></p>
       </div>
       <div class="small-3" id="completed">
-        <h1>Completed</h1>
+        <h1 class="small-pad">Completed</h1>
         <p><span><%= @goal_details['completed'] %></span></p>
       </div>
 
       <div class="small-3" id="saved">
-        <h1>Saved</h1>
+        <h1 class="small-pad">Saved</h1>
         <p><span><%= @goal_details['saved'] %><em>Trees</em></span></p>
       </div>
     </div>

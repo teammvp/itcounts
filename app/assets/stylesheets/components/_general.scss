@@ -89,3 +89,12 @@ h2 {
 .right {
   float: right;
 }
+.small-pad {
+  margin-bottom: $small-pad;
+}
+.medium-pad {
+  margin-bottom: $medium-pad;
+}
+.large-pad {
+  margin-bottom: $large-pad+$large-pad;
+}
