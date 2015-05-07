@@ -4,8 +4,11 @@
       <h1><%= @goal.title %></h2>
       <p><%= @goal.description %></p>
     </div>
+    <div id="goal-message">
+        <h4>Click button and participate in this goal.</h4>
+      </div>
     <button class="rnd-btn complete-btn">
-      <h1 style="font-size: 3em;">Join?</h1>
+      <h1 id="btn-text">Join?</h1>
       <div class="category-logo">
         <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
       </div>
@@ -13,9 +16,7 @@
         <img class="done" src="<%= asset_path( 'completed-tick.svg' ) %>" alt="">
       </div>
     </button>
-       <div>
-          <h2>Thanks for contributing</h2>
-        </div>
+
     <div class="row goal-stats">
       <div class="small-3" id="joined">
         <h1>Joined</h1>
@@ -38,24 +39,31 @@
       <% if logged_in? %>
       // Log that the user clicked the button
       $(".rnd-btn").click(function(){
-        $.ajax({
-          url: "/goals/<%= @goal.title %>",
-          type: "PATCH",
-          data: {
-            user: "something",
-          },
-          context: this,
-          success: function(data){
-            // if the user click is successfully logged,
-            // update the page to the new values
-            $('#joined').find("span").html(data['joined']).css('color', '#F7C03A');
-            $('#completed').find("span").html(data['completed']).css('color', '#F7C03A');
-            $('#saved').find("span").html(data['saved']).css('color', '#F7C03A');
-            $(this).prop('disabled', true);
-            $(this).find('.goal-completed').show();
-            $(this).find('.category-logo').removeAttr('position');
-          }
-        });
+        if($('#btn-text').text() !== "Join?") {
+          $.ajax({
+            url: "/goals/<%= @goal.title %>",
+            type: "PATCH",
+            data: {
+              user: "something",
+            },
+            context: this,
+            success: function(data){
+              // if the user click is successfully logged,
+              // update the page to the new values
+              $('#joined').find("span").html(data['joined']).css('color', '#F7C03A');
+              $('#completed').find("span").html(data['completed']).css('color', '#F7C03A');
+              $('#saved').find("span").html(data['saved']).css('color', '#F7C03A');
+              $(this).prop('disabled', true);
+              $(this).find('.goal-completed').show();
+              $('#goal-message').text('Thanks for contributing');
+              $(this).find('.category-logo').removeAttr('position');
+            }
+          });
+        } else {
+          $('#btn-text').text('Done?');
+          $('#goal-message').text('Have You completed the goal?');
+        }
+
       });
       <% else %>
       $(".rnd-btn").click(function(){
