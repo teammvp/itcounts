@@ -17,7 +17,10 @@ class CategoriesController < ApplicationController
     
   end
 
-  def contact    
+  def contact
+  add_breadcrumb params[:category], :single_category_path
+ 
+  render params[:page]    
   end
 
 
