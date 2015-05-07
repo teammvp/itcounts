@@ -1,6 +1,6 @@
 <div class="row">
   <main class="small-12 columns">
-    <div class="goals">
+    <div class="goals content-header">
       <h1><%= @goal.title %></h2>
       <p><%= @goal.description %></p>
     </div>
@@ -31,6 +31,9 @@
         <h1 class="small-pad">Saved</h1>
         <p><span><%= @goal_details['saved'] %><em>Trees</em></span></p>
       </div>
+    </div>
+    <div class="category-link">
+      <a href="/categories">Back to Category</a>
     </div>
   </main>
 
@@ -72,14 +75,14 @@
           change_button_text();
         }
       });
-      
+
       // user logged in AND subbed to goal
       <% elsif logged_in? && user_subbed_to_goal?(@goal) %>
       change_button_text();
       $(".rnd-btn").click(function(){
         ajax_click_submit.bind(this)();
       });
-      
+
       // user NOT logged in
       <% else %>
       $(".rnd-btn").click(function(){

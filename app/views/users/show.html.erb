@@ -1,16 +1,11 @@
 <div class="row">
   <main>
     <div class="content-header user">
-      <h1><%= @user.username %></h1>
+      <h2><%= @user.username %></h2>
       <h3><%= @user.email %></h3>
     </div>
 
     <div class="user-info row">
-      <ul class="tabs" data-tab>
-        <li class="tab-title active small-6"><a href="#subscribe"><span>3</span><p>Subscribe</p></a></li>
-        <li class="tab-title small-6"><a href="#completed"><span>20</span><p>Completed</p></a></li>
-      </ul>
-
       <ul class="account-data ">
         <li class="small-6 column white-bg">
           <p>Days Streak</p>
@@ -20,15 +15,19 @@
           <p>Last Completed</p>
           <p>Apr 29, 2015</p>
         </li>
-      </li>
+      </ul>
+      <ul class="tabs" data-tab>
+        <li class="tab-title active small-6"><a href="subscribe"><span>3</span><p>Subscribe</p></a></li>
+        <li class="tab-title small-6"><a href="completed"><span>20</span><p>Completed</p></a></li>
+      </ul>
+
+
 
     </div>
 
-    <div class="goals">
+    <div id="subscribe" class="user-goals">
       <a href="#">
         <article class="cat-show">
-
-
           <div class="overlay-progress"></div>
           <div class="cat-info">
             <div class="cat-image">
@@ -48,17 +47,17 @@
 
         </article>
       </a>
+    </div>
+    <div id="completed" class="user-completed hide">
       <a href="#">
         <article class="cat-show">
-
-
           <div class="overlay-progress"></div>
           <div class="cat-info">
             <div class="cat-image">
               <img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
             </div><!--
             --><div class="goal-info">
-              <h1>Shower</h1>
+              <h1>I've done this</h1>
               <p>Set phone timer to 7mins shower time!</p>
 
             </div>
@@ -99,6 +98,11 @@
         });
       console.log($percentage);
       console.log($progressBar, $joined, $target);
+    });
+
+    $('.user-info ul.tabs').on('click', 'a', function(){
+      console.log($(this).attr('href'));
+
     });
   });
 </script>
