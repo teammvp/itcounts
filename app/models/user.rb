@@ -9,9 +9,10 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_presence_of :email
   validates_uniqueness_of :email
+  validates_format_of :email, :with => /@/
 
   def self.authenticate(email, password)
-    user = User.find_by(:email => email)
+    user = User.find_by(:email => email) || User.find_by(:username => email)
     if user && user.password_digest == BCrypt::Engine.hash_secret(password, user.password_salt)
       user
     else
