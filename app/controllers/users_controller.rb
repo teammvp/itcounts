@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   # signup page
   def new
+    add_breadcrumb "Sign Up", :signup_path, :options => { :title => "Sign Up" }
     if logged_in?
       redirect_to root_path
     else
@@ -12,6 +13,7 @@ class UsersController < ApplicationController
 
   # submit via post to make a user
   def create
+
     @user = User.new(user_params)
     @user.save
     if @user.save
@@ -20,7 +22,7 @@ class UsersController < ApplicationController
       redirect_to signup_path
     end
   end
-  
+
   # user profile page
   def show
     @user = User.find_by(:username => params[:username])
