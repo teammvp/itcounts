@@ -4,7 +4,7 @@ APP VERSIONS;
 		-	Non login, user interface, personal input into saving the environment without the need to login or register either as an individual 		or group.
 			It also has the advertising connections dispayed at stragegic times, periodically throughout the apps use.
 			But this is not designed to be intrusive advertisement.
-			It also does not show the "other user" and combined savimngs achieved.
+			It also does not show the "other user" and combined savings achieved.
 
 	ITCOUNTS 2;	(free)
 		-	A logged in version, again the personal input into davimng tyhe environment, but with the connection to the rest of the users 			showing real time savings, this includes, non loggedin users, loggedin users, and corprate users.

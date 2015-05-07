@@ -24,17 +24,27 @@ Category.create([{ title: 'carbon',description: 'carbon saving description', ima
 Category.create([{ title: 'power',description: 'power saving description', image_url: 'category_icons/energy.svg' }]);
 Category.create([{ title: 'recycle',description: 'recycling saving description', image_url: 'category_icons/plants.svg' }]);
 
-Fact.create([{description: '1000 litres saved', category_id: 1, icon: '', background_image: '' }]);
-Fact.create([{description: '8 litres of water every minute saved in a shower', category_id: 1, icon: '', background_image: '' }]);
-Fact.create([{description: 'Low flow shower head uses 33% less water than high flow!', category_id: 1, icon: '', background_image: '' }]);
-Fact.create([{description: '2 litres per day of water saved from a leaky tap!', category_id: 1, icon: '', background_image: '' }]);
-Fact.create([{description: '100 tonnes of CO2 saved', category_id: 2, icon: '', background_image: '' }]);
-Fact.create([{description: '1200kw reduction in consumption per day', category_id: 3, icon: '', background_image: '' }]);
-Fact.create([{description: 'recycling savings of 1 tonne', category_id: 4, icon: '', background_image: '' }]);
-Fact.create([{description: 'Each tonne of paper that is recycled saves: almost 13 trees!', category_id: 4, icon: '', background_image: '' }]);
-Fact.create([{description: '17 trees can absorb the carbon dioxide emitted from your car each year!', category_id: 4, icon: '', background_image: '' }]);
-Fact.create([{description: 'Power costs approximately 10c per kilowatt hour, so switch off!', category_id: 4, icon: '', background_image: '' }]);
-Fact.create([{description: 'Composting food scraps reduces the methane levels in the atmosphere!', category_id: 4, icon: '', background_image: '' }]);
+#Water
+Fact.create([{description: '125 users saved 1000 litres of water today', category_id: 1, icon: '', background_image: '' }]);
+Fact.create([{description: '500 users saved 4000 litres of water today', category_id: 1, icon: '', background_image: '' }]);
+
+# Fact.create([{description: '1000 litres saved', category_id: 1, icon: '', background_image: '' }]);
+# Fact.create([{description: '8 litres of water every minute saved in a shower', category_id: 1, icon: '', background_image: '' }]);
+# Fact.create([{description: 'Low flow shower head uses 33% less water than high flow!', category_id: 1, icon: '', background_image: '' }]);
+# Fact.create([{description: '2 litres per day of water saved from a leaky tap!', category_id: 1, icon: '', background_image: '' }]);
+#power
+Fact.create([{description: '1200 users saved 448kilowatts for today', category_id: 3, icon: '', background_image: '' }]);
+Fact.create([{description: '1200 users saved a total of $716 just for today', category_id: 3, icon: '', background_image: '' }]);
+# Fact.create([{description: '1200kw reduction in consumption per day', category_id: 3, icon: '', background_image: '' }]);
+# Fact.create([{description: 'Power costs approximately 10c per kilowatt hour, so switch off!', category_id: 4, icon: '', background_image: '' }]);
+#carbon
+Fact.create([{description: '150 users saved 2550 trees this year!', category_id: 4, icon: '', background_image: '' }]);
+Fact.create([{description: '80 users saved 4 tonnes of carbon this year', category_id: 4, icon: '', background_image: '' }]);
+# Fact.create([{description: 'Each tonne of paper that is recycled saves: almost 13 trees!', category_id: 4, icon: '', background_image: '' }]);
+# Fact.create([{description: '100 tonnes of CO2 saved', category_id: 2, icon: '', background_image: '' }]);
+#recycle
+Fact.create([{description: '2500 users saved 1 tonne of methane from entering the atmosphere!', category_id: 4, icon: '', background_image: '' }]);
+Fact.create([{description: '950 users saved 12,350 trees this year!', category_id: 4, icon: '', background_image: '' }]);
 
 User.create([{ username: 'JCLee', password: '123', email: 'us@us.com', password_salt: 'abcde' }]);
 User.create([{ username: 'JWolff', password: '123', email: 'some@some.com', password_salt: 'abcde' }]);

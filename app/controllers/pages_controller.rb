@@ -27,4 +27,8 @@ class PagesController < ApplicationController
     # placeholder for API stuffz
   end
 
+  def contact
+  end
+  
+
 end

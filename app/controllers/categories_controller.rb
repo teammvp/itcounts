@@ -17,4 +17,8 @@ class CategoriesController < ApplicationController
     
   end
 
+  def contact    
+  end
+
+
 end

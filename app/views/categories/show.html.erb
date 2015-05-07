@@ -1,7 +1,12 @@
 <main>
-	<% @goals.each do |goal| %>
+		<div>
+			<h2>Click for goal detail</h2>
+		</div>	
+
+		<% @goals.each do |goal| %>
 	<a href="<%= single_goal_path(goal.title) %>">
 		<article class="cat-show">
+
 
 			<div class="overlay-progress"></div>
 			<div class="cat-info">
