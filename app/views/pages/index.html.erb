@@ -8,19 +8,19 @@
       <h1 class="landing-title">
         Join 1000 others to turn small actions into big change.
       </h1>
-      <div>
+
+      <div class="clickJoin">
         <h2>Click to join!</h2>
       </div>
     </div>
       <a href="<%= single_category_path(@fact.category.title) %>">
 
-      <div class="rnd-btn">
-        <div class="category-logo">
-          <img src="<%= asset_path( 'category_icons/water.svg' ) %>">
-          <p><span class="im-span">I'm</span><span class="in-span">In</span></p>
-        </div>
-      </div>
+        <button class="rnd-btn">
+          <div class="category-logo">
+            <img src="<%= asset_path( 'category_icons/water.svg' ) %>">
+            <p><span class="im-span">I'm</span><span class="in-span">In</span></p>
+          </div>
+        </button>
       </a>
-      <h1 class="landing-title">Are you in?</h1>
   </main>
 </div>

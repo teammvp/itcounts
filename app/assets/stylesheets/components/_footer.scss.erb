@@ -7,7 +7,7 @@
     margin-bottom: $normal-pad;
   }
   .social-btn, aside {
-    width: 49.5%;
+    width: 48%;
     display:inline-block;
     vertical-align: top;
   }
@@ -20,6 +20,20 @@
   }
   svg{
     width: 100%;
-    fill: $black;
+    fill: $dark-gray;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .footer-section {
+    .social-btn, aside {
+      width: 100%;
+    }
+  }
+  aside{
+    img{
+      width: 50%;
+    }
+  }
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
