@@ -39,13 +39,11 @@ footer {
   .bottom {
     padding-top:$small-pad;
     p{
-      display:inline;
-      text-align: left;
+      padding: 0 0 $small-pad 0;
       font-size: 0.6em;
-      vertical-align: top;
+
       &:last-child{
         text-align: right;
-        float: right;
       }
     }
   }

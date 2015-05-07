@@ -25,7 +25,9 @@ class UsersController < ApplicationController
 
   # user profile page
   def show
-    @user = User.find_by(:username => params[:username])
+    #@user = User.find_by(:username => params[:username])
+    @user = User.find(session[:user_id])
+    #binding.pry
   end
 
   def user_params
