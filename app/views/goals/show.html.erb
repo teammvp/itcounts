@@ -35,36 +35,52 @@
   </main>
 
   <script>
+    function ajax_click_submit(){
+      $.ajax({
+        url: "/goals/<%= @goal.title %>",
+        type: "PATCH",
+        data: {
+          user: "something",
+        },
+        context: this,
+        success: function(data){
+          // if the user click is successfully logged,
+          // update the page to the new values
+          $('#joined').find("span").html(data['joined']).css('color', '#F7C03A');
+          $('#completed').find("span").html(data['completed']).css('color', '#F7C03A');
+          $('#saved').find("span").html(data['saved']).css('color', '#F7C03A');
+          $(this).prop('disabled', true);
+          $(this).find('.goal-completed').show();
+          $('#goal-message').text('Thanks for contributing');
+          $(this).find('.category-logo').removeAttr('position');
+        }
+      });
+    }
+
+    function change_button_text() {
+      $('#btn-text').text('Done?');
+      $('#goal-message').text('Have You completed the goal?');
+    }
+
     $( document ).ready(function(){
-      <% if logged_in? %>
-      // Log that the user clicked the button
+      // user logged in AND NOT subbed to goal
+      <% if logged_in? && !user_subbed_to_goal?(@goal) %>
       $(".rnd-btn").click(function(){
         if($('#btn-text').text() !== "Join?") {
-          $.ajax({
-            url: "/goals/<%= @goal.title %>",
-            type: "PATCH",
-            data: {
-              user: "something",
-            },
-            context: this,
-            success: function(data){
-              // if the user click is successfully logged,
-              // update the page to the new values
-              $('#joined').find("span").html(data['joined']).css('color', '#F7C03A');
-              $('#completed').find("span").html(data['completed']).css('color', '#F7C03A');
-              $('#saved').find("span").html(data['saved']).css('color', '#F7C03A');
-              $(this).prop('disabled', true);
-              $(this).find('.goal-completed').show();
-              $('#goal-message').text('Thanks for contributing');
-              $(this).find('.category-logo').removeAttr('position');
-            }
-          });
+          ajax_click_submit.bind(this)();
         } else {
-          $('#btn-text').text('Done?');
-          $('#goal-message').text('Have You completed the goal?');
+          change_button_text();
         }
-
       });
+      
+      // user logged in AND subbed to goal
+      <% elsif logged_in? && user_subbed_to_goal?(@goal) %>
+      change_button_text();
+      $(".rnd-btn").click(function(){
+        ajax_click_submit.bind(this)();
+      });
+      
+      // user NOT logged in
       <% else %>
       $(".rnd-btn").click(function(){
         window.location.href = "/login"
