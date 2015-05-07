@@ -11,5 +11,9 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find_by(:id => session[:user_id]) if session[:user_id]
   end
   
-  helper_method :current_user, :logged_in?
+  def user_subbed_to_goal?(goal)
+    !!UserGoal.find_by(:user_id => current_user.id, :goal_id => goal.id)
+  end
+
+  helper_method :current_user, :logged_in?, :user_subbed_to_goal?
 end

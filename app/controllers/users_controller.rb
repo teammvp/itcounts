@@ -13,7 +13,6 @@ class UsersController < ApplicationController
 
   # submit via post to make a user
   def create
-
     @user = User.new(user_params)
     @user.save
     if @user.save
@@ -25,9 +24,7 @@ class UsersController < ApplicationController
 
   # user profile page
   def show
-    #@user = User.find_by(:username => params[:username])
     @user = User.find(session[:user_id])
-    #binding.pry
   end
 
   def user_params
