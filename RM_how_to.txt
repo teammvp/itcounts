@@ -1,0 +1,57 @@
+LOGIN:
+
+GENERAL PAGE LAYOUT:
+
+-	TOP LEFT:		itCounts menu which includes Home, Categories & Contact.
+-	TOP RIGHT:		This is the login / logout button.
+-	MIDDLE:			The actions and details of the savings to be achieved.
+-	BOTTOM LEFT:	Shortcuts to popular media; Facebook, LinkedIn, Twitter, Google+.
+-	BOTTOM RIGHT:	Main sponsor logo, General Assembly.
+
+This is page 1, the "login" page.
+
+Put in your email address, and a password for entry into "itCounts" actions.
+
+If you are a new user, register your details to sign up.
+
+HOMEPAGE:
+
+This page is the default page, that starts the user with savings in the "water" category.
+
+This page lists a topical fact, under the water heading that indicates savings to be made.
+
+The "I'mIn" icon is a button that once pressed will take you to the actions page. 
+
+ACTIONS PAGE LIST:
+
+The list of actions shows the user which areas can be actioned to save (in this instance) on water usage.
+Each heading is a button that covers the complete width of the page, and the grren border top & bottom of each heading.
+The list includes, from left;	How many users are currently onboard with this action.
+								The water icon.
+								The action heading.
+								The explanation of what is required from the heading.
+								The target expectation of many users choosing this action. 
+
+The user once has decided on the action, then pushes the button. This will move the user to the "Action Achieved Page".
+
+ACTION ACHIEVED PAGE:
+
+Once the user has achieved the action, they press the "I'mIn" icon button situated in the center of the page.
+This button once clicked updates the numbers on the 3 headings below:	Joined, Completed, Saved.
+The numbers then increase upwards and displays what the users action has achieved not only to themselves but to the overall database.
+A green tick of success is shown once the user is successful.
+
+MENU SECTION:
+-	HOME:		Takes you to Page 1 by default to the "water savings" page.
+-	CATEGORIES:	Takes you to the 4 individual savings action icons:	Water, Carbon, Power, and Recycle.
+
+Each of these 4 buttons take you the ACTION PAGE LIST as indicated above, these will take you to the individual actions of each heading.
+
+
+
+
+
+
+
+
+

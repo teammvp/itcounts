@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "ItCounts" %></title>
     <%= stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Montserrat" %>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -45,12 +45,15 @@
         <% end %>
 
       </header>
-    </div>
+
+
+       </div>
     <ul id="primary-nav">
       <li><a href="/">Home</a></li>
       <li><a href="/categories">Categories</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
+
     <div id="breadcrumbs">
       <%= render_breadcrumbs :separator => ' <em>></em> ' %>
     </div>
