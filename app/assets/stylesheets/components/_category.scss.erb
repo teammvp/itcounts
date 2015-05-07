@@ -47,22 +47,24 @@
 .cat-show {
   width: 100%;
   text-align: left;
-  height: 120px;
+  //min-height: 120px;
   margin-bottom: $small-pad;
+  background: url(<%= asset_path 'bg/progress-bg.png' %>) repeat-y;
+  background-size: 0%;
 
   //@include box-shadow(rgba($black,.3) 1px 1px 5px);
-  .overlay-progress{
-    height: 120px;
-    position: absolute;
-    opacity: 0.5;
-    z-index: 1;
-    background: url(<%= asset_path 'bg/progress-bg.png' %>) ;
-    width:0;
+  // .overlay-progress{
+  //   //height: 120px;
+  //   position: absolute;
+  //   opacity: 0.5;
+  //   z-index: 1;
+  //   background: url(<%= asset_path 'bg/progress-bg.png' %>) ;
+  //   width:0;
 
-  }
+  // }
   .cat-info {
     z-index: 5;
-    position: absolute;
+    //position: absolute;
     width: 100%;
   }
 }
@@ -103,6 +105,7 @@
   font-size: 0.8em;
   color: $blue;
   padding: 0 $normal-pad;
+
   p{
     display: inline-block;
     &:first-child {
@@ -110,7 +113,7 @@
       text-align:left;
     }
     &:last-child {
-      width: 29%;
+      width: 25%;
       text-align:right;
     }
   }

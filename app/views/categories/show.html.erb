@@ -31,15 +31,15 @@
 		// write function to generate progress bar according to statistic
 		$.each($('article'), function() {
 
-			$progressBar = $(this).find('.overlay-progress');
+			$progressBar = $(this);
 			$joined = $(this).find('.joined');
 			$target = $(this).find('.target');
 			$percentage = $joined.text() / $target.text() * 100;
 
 			$progressBar.velocity(
 	      {
-	        width: $percentage+"%",
-	        backgroundColor: "#306eff"
+	        backgroundSize: $percentage+"%",
+	        backgroundColor: "#ffffff"
 	      },
 	      {
 	        delay: 300,
@@ -47,7 +47,7 @@
 	        duration: 850
 	      });
 			console.log($percentage);
-			//console.log($progressBar, $joined, $target);
+			console.log($progressBar, $joined, $target);
   	});
 	});
 </script>
