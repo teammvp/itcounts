@@ -2,13 +2,13 @@
   <main class="small-12 columns">
     <ul class="row inline-list cat-list">
     <div id="goal">
-      <h2>Click to show list of goals available</h2>
-    </div> 
+      <h3>Click any category to show list of goals available</h3>
+    </div>
 
       <% @categories.each do |category| %>
       <li class="small-6">
         <div class="category">
-       
+
         <a href="/<%=  category.title  %> "><%=  inline_svg(category.image_url) %>
           <h1><%= category.title %></h1></a>
         </div>
