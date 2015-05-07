@@ -5,7 +5,10 @@
       <p><%= @goal.description %></p>
     </div>
 
+ 
+
     <button class="rnd-btn complete-btn">
+      <h1 style="font-size: 3em;">Join?</h1>
       <div class="category-logo">
         <img src="<%= asset_path( 'category_icons/plants.svg' ) %>">
       </div>
@@ -13,7 +16,9 @@
         <img class="done" src="<%= asset_path( 'completed-tick.svg' ) %>" alt="">
       </div>
     </button>
-
+       <div>
+          <h2>Thanks for contributing</h2>
+        </div>
     <div class="row goal-stats">
       <div class="small-3" id="joined">
         <h1>Joined</h1>
