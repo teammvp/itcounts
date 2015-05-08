@@ -57,25 +57,32 @@
     <div id="breadcrumbs">
       <%= render_breadcrumbs :separator => ' <em>></em> ' %>
     </div>
-    <%= yield %>
+    <div class="row">
+      <main>
+        <%= yield %>
+        <section class="large-12 columns footer-section">
+          <div class="statement">
+            <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
+          </div>
+          <div class="social-btn small-6 column">
+            <ul>
+              <li><a href=""><%=  inline_svg("social_network/facebook24.svg") %></a></li>
+              <li><a href=""><%=  inline_svg("social_network/linkedin12.svg") %></a></li>
+              <li><a href=""><%=  inline_svg("social_network/twitter47.svg") %></a></li>
+              <li><a href=""><%=  inline_svg("social_network/google2.svg") %></a></li>
+            </ul>
+          </div>
+          <aside class="small-6 column">
+            <p>Sponsored by:</p>
+            <img src="<%= asset_path( 'social_network/ga.png' )  %>">
+          </aside>
+        </section>
+      </main>
 
-    <section class="large-12 columns footer-section">
-      <div class="statement">
-        <p>Itcounts believe that every little changes made by anyone counts. Itcounts believe that every little changes.</p>
-      </div>
-      <div class="social-btn small-6 column">
-        <ul>
-          <li><a href=""><%=  inline_svg("social_network/facebook24.svg") %></a></li>
-          <li><a href=""><%=  inline_svg("social_network/linkedin12.svg") %></a></li>
-          <li><a href=""><%=  inline_svg("social_network/twitter47.svg") %></a></li>
-          <li><a href=""><%=  inline_svg("social_network/google2.svg") %></a></li>
-        </ul>
-      </div>
-      <aside class="small-6 column">
-        <p>Sponsored by:</p>
-        <img src="<%= asset_path( 'social_network/ga.png' )  %>">
-      </aside>
-    </section>
+    </div>
+
+
+
 
     <footer class="large-12 columns">
 

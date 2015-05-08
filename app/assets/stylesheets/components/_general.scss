@@ -26,8 +26,10 @@ main {
   @include background-image(linear-gradient($light-green, $turquoise));
   height: 100%;
   text-align: center;
-  padding-top: 20px;
   color: $dark-gray;
+  a {
+    text-decoration:none;
+  }
 }
 
 footer {
@@ -53,6 +55,8 @@ article {
   background-color: $white;
   position: relative;
 }
+
+
 
 a, a:visited {
   color:inherit;

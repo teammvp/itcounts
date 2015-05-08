@@ -1,36 +1,32 @@
-<main>
+<div class="goal">
+  <h3>Make a difference, click to choose a task.</h3>
+</div>
 
-	<div class="goal">
-    <h3>Make a difference, click to choose a task.</h3>
-  </div>
-
-	<% @goals.each do |goal| %>
-	<a href="<%= single_goal_path(goal.title) %>">
-		<article class="cat-show">
+<% @goals.each do |goal| %>
+<a href="<%= single_goal_path(goal.title) %>">
+	<article class="cat-show">
 
 
-			<div class="overlay-progress"></div>
-			<div class="cat-info">
-				<div class="cat-image">
-					<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
-				</div><!--
-				--><div class="goal-info">
-					<h1><%= goal.title %></h1>
-		   		<p><%= goal.description  %></p>
+		<div class="overlay-progress"></div>
+		<div class="cat-info">
+			<div class="cat-image">
+				<img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
+			</div><!--
+			--><div class="goal-info">
+				<h1><%= goal.title %></h1>
+	   		<p><%= goal.description  %></p>
 
-				</div>
-				<div class="participation-info">
-					<p><span class="joined"><%= goal.users.length %></span> others on-board</p>
-
-					<p>Target:<span class="target"><%= goal.target %></span></p>
-				</div>
 			</div>
+			<div class="participation_info">
+				<div><span class="joined"><%= goal.users.length %></span> others on-board</div>
 
-		</article>
-	</a>
-	<% end %>
+				<div>Target:<span class="target"><%= goal.target %></span></div>
+			</div>
+		</div>
 
-</main>
+	</article>
+</a>
+<% end %>
 
 <script>
 	$(document).ready(function() {
