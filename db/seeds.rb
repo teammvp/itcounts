@@ -6,24 +6,24 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Goal.create([{ title: 'shower-timer', description: 'Set phone timer to 5 minutes while showering.',  duration: 1, multiplier: 60, target: 10, category_id: 1 }]);
-Goal.create([{ title: 'teeth-brushing', description: 'Turn off the tap while brushing your teeth.', duration:1, multiplier: 12, target: 100, category_id: 1 }])
-Goal.create([{ title: 'low-flow', description: 'Convert your "high flow" shower head to "low flow".',  duration: 1, multiplier: 5, target: 40, category_id: 1 }]);
-Goal.create([{ title: 'leaky-taps', description: 'Fix a leaky tap.',  duration: 30, multiplier: 200, target: 100, category_id: 1 }]);
+Goal.create([{ unit_noun: "litres", title: 'shower-timer', description: 'Set phone timer to 5 minutes while showering.',  duration: 1, multiplier: 60, target: 10, category_id: 1 }]);
+Goal.create([{ unit_noun: "litres", title: 'teeth-brushing', description: 'Turn off the tap while brushing your teeth.', duration:1, multiplier: 12, target: 100, category_id: 1 }])
+Goal.create([{ unit_noun: "litres", title: 'low-flow', description: 'Convert your "high flow" shower head to "low flow".',  duration: 1, multiplier: 5, target: 40, category_id: 1 }]);
+Goal.create([{ unit_noun: "litres", title: 'leaky-taps', description: 'Fix a leaky tap.',  duration: 30, multiplier: 200, target: 100, category_id: 1 }]);
 
-Goal.create([{ title: 'dont-drive', description: "Use public transport or cycle today.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
-Goal.create([{ title: 'heater-use', description: "Turn central heating down 2 degrees.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
-Goal.create([{ title: 'close-doors-and-windows', description: "Close doors and windows when heater is on.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
-Goal.create([{ title: 'switch-provider', description: "Switch to a green energy-provider.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
+Goal.create([{ unit_noun: "tons CO2", title: 'dont-drive', description: "Use public transport or cycle today.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
+Goal.create([{ unit_noun: "tons CO2", title: 'heater-use', description: "Turn central heating down 2 degrees.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
+Goal.create([{ unit_noun: "tons CO2", title: 'close-doors-and-windows', description: "Close doors and windows when heater is on.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
+Goal.create([{ unit_noun: "tons CO2", title: 'switch-provider', description: "Switch to a green energy-provider.", duration: 1, multiplier: 5, target: 100, category_id: 2 }]);
 
-Goal.create([{ title: 'energy-savings', description: 'Start changing to energy efficient bulbs.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
-Goal.create([{ title: 'lights-off', description: 'Turn off a light that shouldn\'t be on.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
-Goal.create([{ title: 'unplug-appliance', description: 'Unplug microwave when not in use.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
-Goal.create([{ title: 'switch-off-computer', description: 'Shut down your computer when finished using it.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
+Goal.create([{ unit_noun: "KwH", title: 'energy-savings', description: 'Start changing to energy efficient bulbs.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
+Goal.create([{ unit_noun: "KwH", title: 'lights-off', description: 'Turn off a light that shouldn\'t be on.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
+Goal.create([{ unit_noun: "KwH", title: 'unplug-appliance', description: 'Unplug microwave when not in use.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
+Goal.create([{ unit_noun: "KwH", title: 'switch-off-computer', description: 'Shut down your computer when finished using it.', duration: 20, multiplier: 5, target: 50, category_id: 3 }]);
 
-Goal.create([{ title: 'recycle-paper',description: 'Recycle something you would have thrown out.', duration: 2, multiplier: 5, target: 30, category_id: 4 }]);
-Goal.create([{ title: 'save-cooking-water',description: 'Save the water you use while cooking to water plants.', duration: 2, multiplier: 5, target: 30, category_id: 4 }]);
-Goal.create([{ title: 'save-from-tap',description: 'Fill bucket with the cold water before the hot water begins!', duration: 2, multiplier: 5, target: 50, category_id: 4 }]);
+Goal.create([{ unit_noun: "birds", title: 'recycle-paper',description: 'Recycle something you would have thrown out.', duration: 2, multiplier: 5, target: 30, category_id: 4 }]);
+Goal.create([{ unit_noun: "litres", title: 'save-cooking-water',description: 'Save the water you use while cooking to water plants.', duration: 2, multiplier: 5, target: 30, category_id: 4 }]);
+Goal.create([{ unit_noun: "litres", title: 'save-from-tap',description: 'Fill bucket with the cold water before the hot water begins!', duration: 2, multiplier: 5, target: 50, category_id: 4 }]);
 
 Category.create([{ title: 'water',description: 'water saving description', image_url: 'category_icons/water.svg' }]);
 Category.create([{ title: 'carbon',description: 'carbon saving description', image_url: 'category_icons/footprint.svg' }]);

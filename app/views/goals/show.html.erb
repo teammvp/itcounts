@@ -29,7 +29,7 @@
 
       <div class="small-3" id="saved">
         <h1 class="small-pad">Saved</h1>
-        <p><span><%= @goal_details['saved'] %><em>Trees</em></span></p>
+        <p><span><%= @goal_details['saved'] %><em><%= @goal.unit_noun %></em></span></p>
       </div>
     </div>
     <div class="category-link">
@@ -51,7 +51,7 @@
           // update the page to the new values
           $('#joined').find("span").html(data['joined']).css('color', '#F7C03A');
           $('#completed').find("span").html(data['completed']).css('color', '#F7C03A');
-          $('#saved').find("span").html(data['saved']).css('color', '#F7C03A');
+          $('#saved').find("span").html(data['saved'] + '<em><%= @goal.unit_noun %></em>').css('color', '#F7C03A');
           $(this).prop('disabled', true);
           $(this).find('.goal-completed').show();
           $('#goal-message').text('Thanks for contributing');
