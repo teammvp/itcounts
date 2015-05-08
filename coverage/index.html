@@ -14,14 +14,14 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-05-08T05:17:10+10:00">2015-05-08T05:17:10+10:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-05-08T12:35:42+10:00">2015-05-08T12:35:42+10:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">54.84%</span></span>
+    (<span class="covered_percent"><span class="red">54.4%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>12</b> files in total.
-    <b>124</b> relevant lines. 
+    <b>125</b> relevant lines. 
     <span class="green"><b>68</b> lines covered</span> and
-    <span class="red"><b>56</b> lines missed </span>
+    <span class="red"><b>57</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -102,11 +102,11 @@
       
       <tr>
         <td class="strong"><a href="#3197362d3ecc35f1c6709fb604450a5d09e7ca57" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="red strong">38.89 %</td>
-        <td>35</td>
-        <td>18</td>
+        <td class="red strong">36.84 %</td>
+        <td>36</td>
+        <td>19</td>
         <td>7</td>
-        <td>11</td>
+        <td>12</td>
         <td>0.4</td>
       </tr>
       
@@ -179,7 +179,7 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">39.78%</span></span>
+    (<span class="covered_percent"><span class="red">39.36%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -190,9 +190,9 @@
   <a name="Controllers"></a>
   <div>
     <b>6</b> files in total.
-    <b>93</b> relevant lines. 
+    <b>94</b> relevant lines. 
     <span class="green"><b>37</b> lines covered</span> and
-    <span class="red"><b>56</b> lines missed </span>
+    <span class="red"><b>57</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -260,11 +260,11 @@
       
       <tr>
         <td class="strong"><a href="#3197362d3ecc35f1c6709fb604450a5d09e7ca57" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="red strong">38.89 %</td>
-        <td>35</td>
-        <td>18</td>
+        <td class="red strong">36.84 %</td>
+        <td>36</td>
+        <td>19</td>
         <td>7</td>
-        <td>11</td>
+        <td>12</td>
         <td>0.4</td>
       </tr>
       
@@ -1514,11 +1514,11 @@
         <div class="source_table" id="3197362d3ecc35f1c6709fb604450a5d09e7ca57">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="red">38.89 %</span> covered</h4>
+    <h4><span class="red">36.84 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
+      <b>19</b> relevant lines. 
       <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>11</b> lines missed.</span>
+      <span class="red"><b>12</b> lines missed.</span>
     </div>
   </div>
   
@@ -1684,52 +1684,58 @@
         <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    @user = User.find(session[:user_id])</code>
+          <code class="ruby">    add_breadcrumb &quot;Profile&quot;, :user_profile_path, :options =&gt; { :title =&gt; &quot;Profile&quot; }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="missed" data-hits="0" data-linenumber="28">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    @user = User.find_by(:username =&gt; params[:username])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">  def user_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
+        <li class="missed" data-hits="0" data-linenumber="32">
           
           
           <code class="ruby">    params.require(:user).permit(:username, :email, :password, :password_confirm)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
           <code class="ruby">  private :user_params</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">end</code>

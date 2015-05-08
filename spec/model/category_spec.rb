@@ -6,8 +6,7 @@ RSpec.describe Category, :type => :model do
     test_category = Category.create!(title: "test", description: "test desc.", image_url: "http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png")
     test_category_two = Category.create!(title: "test", description: "test two desc.", image_url: "http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png")
 
-    expect(test_category).to be_valid
-    expect(test_category_two).to_not be_valid
+    expect(test_category_two).to_be !valid
   end
 
 end

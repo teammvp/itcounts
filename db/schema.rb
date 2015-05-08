@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506065812) do
+ActiveRecord::Schema.define(version: 20150508024318) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150506065812) do
     t.string   "duration"
     t.integer  "multiplier"
     t.integer  "target"
+    t.string   "unit_noun"
   end
 
   create_table "user_goals", force: :cascade do |t|

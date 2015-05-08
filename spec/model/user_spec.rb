@@ -30,23 +30,20 @@ RSpec.describe User, :type => :model do
     test_user = User.create!(username: "testing", email: "test@testing.com", password: "123")
     auth_user = User.authenticate("testing", "123")
     
-    expect(auth_user == test_user)
+    expct(auth_user == test_user)
   end
 
   it "cannot have duplicate usernames" do
-    test_user = User.create!(username: "testing", email: "test@testing.com", password: "123")
-    dupe_user = User.create!(username: "testingTwo", email: "test@testing.com", password: "123")
+    User.create!(username: "testing", email: "test@testing.com", password: "123")
+    dupe_user = User.new(username: "testingTwo", email: "test@testing.com", password: "123")
 
-    test_user.should be_valid
-    dupe_user.should_not be_valid
+    expect( dupe_user.valid? ) == false
   end
 
   it "cannot have duplicate email addresses" do
-    test_user = User.create!(username: "testing", email: "testtwo@testing.com", password: "123")
-    dupe_user = User.create!(username: "testing", email: "test@testing.com", password: "123")
-
-    test_user.should be_valid
-    dupe_user.should_not be_valid
+    User.create!(username: "testing", email: "testtwo@testing.com", password: "123")
+    dupe_user = User.new(username: "testing", email: "test@testing.com", password: "123")
+    expect( dupe_user.valid? ) == false
   end
 
 end
