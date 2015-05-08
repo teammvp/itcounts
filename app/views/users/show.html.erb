@@ -17,8 +17,8 @@
       </li>
     </ul>
     <ul class="tabs" data-tab>
-      <li class="tab-title active small-6"><a href="subscribe"><span>3</span><p>Subscribe</p></a></li>
-      <li class="tab-title small-6"><a href="completed"><span>20</span><p>Completed</p></a></li>
+      <li class="tab-title active small-6"><a href="subscribe"><span><%= @uniq_goals.length %></span><p>Subscribe</p></a></li>
+      <li class="tab-title small-6"><a href="completed"><span><%= @goals.length %></span><p>Completed</p></a></li>
     </ul>
 
 
@@ -26,50 +26,58 @@
   </div>
 
   <div id="subscribe" class="user-goals">
-    <a href="#">
+  <% @uniq_goals.each do |goal| %>
+    <a href="<%= single_goal_path(goal.title) %>">
       <article class="cat-show">
+
+
         <div class="overlay-progress"></div>
         <div class="cat-info">
           <div class="cat-image">
             <img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
           </div><!--
           --><div class="goal-info">
-            <h1>Shower</h1>
-            <p>Set phone timer to 7mins shower time!</p>
+            <h1><%= goal.title %></h1>
+            <p><%= goal.description  %></p>
 
           </div>
           <div class="participation-info">
-            <p><span class="joined">50</span> others on-board</p>
+            <p><span class="joined"><%= goal.users.length %></span> others on-board</p>
 
-            <p>Target:<span class="target">70</span></p>
+            <p>Target:<span class="target"><%= goal.target %></span></p>
           </div>
         </div>
 
       </article>
     </a>
+  <% end %>
   </div>
   <div id="completed" class="user-completed hide">
-    <a href="#">
+  <% @goals.each do |goal| %>
+    <a href="<%= single_goal_path(goal.title) %>">
       <article class="cat-show">
+
+
         <div class="overlay-progress"></div>
         <div class="cat-info">
           <div class="cat-image">
             <img src="<%= asset_path( 'category_icons/water.svg' ) %>" alt="">
           </div><!--
           --><div class="goal-info">
-            <h1>I've done this</h1>
-            <p>Set phone timer to 7mins shower time!</p>
+            <h1><%= goal.title %></h1>
+            <p><%= goal.description  %></p>
 
           </div>
           <div class="participation-info">
-            <p><span class="joined">50</span> others on-board</p>
+            <p><span class="joined"><%= goal.users.length %></span> others on-board</p>
 
-            <p>Target:<span class="target">70</span></p>
+            <p>Target:<span class="target"><%= goal.target %></span></p>
           </div>
         </div>
 
       </article>
     </a>
+  <% end %>
   </div>
 </div>
 
