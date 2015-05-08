@@ -26,6 +26,8 @@ class UsersController < ApplicationController
   def show
     add_breadcrumb "Profile", :user_profile_path, :options => { :title => "Profile" }
     @user = User.find_by(:username => params[:username])
+    @goals = @user.goals
+    @uniq_goals = @goals.uniq
   end
 
   def user_params
