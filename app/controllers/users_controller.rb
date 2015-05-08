@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   # user profile page
   def show
     add_breadcrumb "Profile", :user_profile_path, :options => { :title => "Profile" }
-    @user = User.find(session[:user_id])
+    @user = User.find_by(:username=>params[:username])
   end
 
   def user_params
