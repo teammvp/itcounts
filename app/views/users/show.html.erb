@@ -107,7 +107,9 @@
 
     $('.user-info ul.tabs').on('click', 'a', function(){
       console.log($(this).attr('href'));
-
+      $container = $(this).attr('href');
+      $('#completed').toggle();
+      $('#subscribe').toggle();
     });
   });
 </script>
