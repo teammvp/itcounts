@@ -1,32 +1,31 @@
-<div class="row">
-  <main class="small-12 columns landing">
-    <div class="landing-statement">
-      <h1 class="landing-title">
-        The ItCounts community saved 50,000L of water today.
-      </h1>
-      <br>
-      <h1 class="landing-title">
-        Join 1000 others to turn small actions into big change.
-      </h1>
+<div class="landing">
+  <div class="landing-statement">
+    <h1 class="landing-title">
+      The ItCounts community saved 50,000L of water today.
+    </h1>
+    <br>
+    <h1 class="landing-title">
+      Join 1000 others to turn small actions into big change.
+    </h1>
 
-      <div class="clickJoin">
-        <h2>Click to join!</h2>
-      </div>
+    <div class="clickJoin">
+      <h2>Click to join!</h2>
     </div>
-    <a href="<%= single_category_path(@fact.category.title) %>">
+  </div>
+  <a href="<%= single_category_path(@fact.category.title) %>">
 
-      <button class="rnd-btn">
-        <div class="category-logo">
-          <img src="<%= asset_path( 'category_icons/water.svg' ) %>">
-          <p><span class="im-span">I'm</span><span class="in-span">In</span></p>
-        </div>
-      </button>
-    </a>
-    <a href="/categories">
-      <div class="category-link">
-        Want to see more categories available
+    <button class="rnd-btn">
+      <div class="category-logo">
+        <img src="<%= asset_path( 'category_icons/water.svg' ) %>">
+        <p><span class="im-span">I'm</span><span class="in-span">In</span></p>
       </div>
-    </a>
-  </main>
-
+    </button>
+  </a>
+  <a href="/categories">
+    <div class="category-link">
+      Want to see more categories available
+    </div>
+  </a>
 </div>
+
+
