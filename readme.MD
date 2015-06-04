@@ -6,8 +6,8 @@ ItCounts aims to overcome the apathy of "huge ocean, small fish" syndrome by sug
 Quickstart
 ----------
 
-Credentials -
-Username: admin
+**Credentials**    
+Username: admin    
 Password: password is the same as username
 
 Visit https://itcounts.herokuapp.com - join a cause, be part of a community of change!
@@ -31,12 +31,12 @@ Technology Used
 Still To Do
 -----------
 
-Style Issues -
+**Style Issues**
 
 * Create non-mobile styling
 * Small style bugs on goals_list page for 100%+ subscribed goals
 
-Logic issues -
+**Logic issues**
 
 * Create findable links to user profile page
 * User redirect path lost if user does not successfully log in first time
