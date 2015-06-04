@@ -51,7 +51,6 @@ JC WORK;
 LUKE;
 	-	coding of all pages
 	-	setting up of pages in routes
-	-
 
 JEFF;
 	-	assisted in setting up code for goal pages
